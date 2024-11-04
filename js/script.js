@@ -6,5 +6,5 @@ document.getElementById("infoButton").onclick = function() {
 document.getElementById("audioButton").onclick = function() {
     var video = document.getElementById("backgroundVideo");
     video.muted = !video.muted;
-    this.textContent = video.muted ? "Ativar Áudio" : "Desativar Áudio";
+    this.textContent = video.muted ?  "🔇 Desativar Áudio" : "🔊 Ativar Áudio";
 };
