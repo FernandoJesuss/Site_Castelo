@@ -1,0 +1,53 @@
+.hamburger {
+    display: none; /* Oculta o hamburger por padrão */
+    flex-direction: column; /* Alinha as barras verticalmente */
+    cursor: pointer;
+    z-index: 3; /* Para garantir que fique acima de outros elementos */
+}
+
+.bar {
+    height: 3px;
+    width: 30px;
+    background-color: #4a148c; /* Cor das barras */
+    margin: 4px 0; /* Espaçamento entre as barras */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+/* Estilos para o menu hamburger e responsividade */
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: flex; /* Mostra o hamburger em telas pequenas */
+    }
+
+    nav {
+        display: none; /* Oculta o nav em telas pequenas */
+        flex-direction: column; /* Alinha os links verticalmente */
+        position: absolute; /* Permite que o nav apareça sobre o conteúdo */
+        background-color: #f5f070; /* Cor de fundo do menu */
+        width: 100%;
+        top: 15vh; /* Abaixo do header */
+        left: 0;
+        z-index: 2; /* Para garantir que fique acima do vídeo */
+    }
+
+    nav.active {
+        display: flex; /* Mostra o nav quando ativo */
+    }
+
+    nav a {
+        margin: 10px 0; /* Margem vertical para links */
+    }
+
+    /* Estilos para quando o menu estiver aberto */
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); /* Primeiro barra */
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0; /* Remove a segunda barra */
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px); /* Terceira barra */
+    }
+}

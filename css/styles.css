@@ -1,246 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
-#canvas {
-width: 100%;
-height: 100%;
-cursor: pointer;
-
-}
-
 
 html {
     scroll-snap-type: y mandatory;
-
 }
 
-Video {
+body {
+    color: rgb(189, 19, 19);
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+video {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: 15%;
     left: 0;
     z-index: -1;
     object-fit: cover;
     filter: brightness(60%);
-
-
 }
 
 .logo {
     display: flex;
-
-
-
-}
-
-
-
-.loogo {
+    align-items: center;
+    justify-content: center;
+    left: 120px;
     width: 12%;
-    height: 12%;
+    height: 100%;
     padding: 2%;
-    left: 2%;
-
-    display: flex;
     position: relative;
-    color: rgb(17, 8, 8);
-cursor: pointer;
-}
+    cursor: pointer;
 
 
-
-h1 {
-    color: white;
-    font-size: 50px;
 }
 
 header {
-    top: -25px;
     background-color: #f5f070;
     width: 100%;
     height: 15vh;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    z-index: 2;
+/* display: none; */
 }
 
+.hamburger {
+    display: none;
+    /* Oculta o hamburger por padrão */
+    flex-direction: column;
+    /* Alinha as barras verticalmente */
+    cursor: pointer;
+    z-index: 3;
+    /* Para garantir que fique acima de outros elementos */
+}
 
+.bar {
+    height: 3px;
+    width: 30px;
+    background-color: #4a148c;
+    /* Cor das barras */
+    margin: 4px 0;
+    /* Espaçamento entre as barras */
+    transition: all 0.3s ease;
+    /* Transição suave */
+}
 
 nav {
-    background-color: #4A148C;
-    
+    display: flex;
+    justify-content: center;
+    color: #4a148c;
     width: 100%;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     text-align: center;
-    margin-top: -3%;
+    position: relative;
+    top: -60px;
+    /* background-color: red; */
 }
 
 nav a {
-    color: #FFB300;
-    
+    color: #4a148c;
+    font-size: 20px;
+    font-weight: 700;
     text-decoration: none;
     padding: 10px 15px;
     margin: 0 10px;
     border-radius: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, filter 0.3s;
 }
 
 nav a:hover {
-    filter: #ff5;
-    
-    filter: brightness(120%) contrast(150%) sepia(30%);
-
-
-
-    
-    
-    
+    filter: drop-shadow(2px 2px 5px rgba(128, 0, 128, 0.5));
 }
 
 main {
     position: relative;
     z-index: 2;
-    
-    padding: 50%;
-    
-    color: rgb(189, 19, 19);
-    
+    padding: 50px;
+    /* Ajuste conforme necessário */
 }
 
 #audioButton {
-    display: flex; 
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
     position: relative;
     left: 90%;
     border-radius: 10px;
-     /* top: 40%;  */
     z-index: 2;
-    border: none;
-    
-    }
+}
 
 button {
     display: flex;
-    background-color: #f5f070;
     color: #c305f3;
-    top: -18px;
-    border: none;
-    padding: 7px 20px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 10px;
-    position: relative;
-    left: 90%;
-    transition: background-color 0.3s;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, background-color 0.3s;
 }
 
 button:hover {
     background-color: #f1fcb9;
-    
 }
 
-.character {
-    margin: 10px 0;
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
 }
 
-.character img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media screen and (max-width: 600px) {
-
-    .logo {
-        filter: brightness(100);
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    header {
+        display: flexbox;
+        background-color: #f5f070;
+        width: 100%;
+        height: 15vh;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         position: relative;
-        margin: 0 auto;
-        width: 260px;
-        margin-top: 15px;   
-
+        margin-top: -4%;
+    
     }
 
-    .tes {
-        position: relative;
-        margin-top: -200px;
-        color: white;
-        font-size: 25px;     
+
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* filter: brightness(100); */
+        /* margin: 0 auto; */
+        width: 50%;
+        margin-top: 15px;
         
     }
 
-h1 {
-    color: white;
-    font-size: 20px;
-    margin-top: -55px;   
-
-}
-
-    .Sub-titulo {
+    h1 {
         color: white;
+        font-size: 20px;
+        margin-top: -55px;
     }
 
-    Video,
-    .img-tesla {
-        width: 100%; 
-        height: 100%; 
-        position: absolute; 
-        top: 0;
-        left: 0;
-        z-index: -1; 
-        object-fit: cover;
-        filter: brightness(60%);
+    video {
+        z-index: -1;
     }
 
     .formulario {
@@ -251,34 +190,115 @@ h1 {
         z-index: 3;
         transition: -0.8s;
         margin-top: 9%;
-        translate: -165px;
-        
+        transform: translate(-165px);
     }
 
-    button {
-        background-color: rgba(34, 34, 34, 0.8);
-        color: white;
-        padding: 7px 30px;
-        border-radius: 15px; 
-        border: none;
-        cursor: pointer;       
+
+
+    #audioButton {
+        display: none;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        position: absolute;
+        left: 90%;
+        border-radius: 10px;
+        z-index: 2;
     }
 
     .item {
-        position: relative;
-        width: 100vw; 
+        width: 100vw;
         height: 55vh;
-        display: flex; 
-        justify-content: space-between; 
-        flex-direction: column; 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
         scroll-snap-align: start;
-
     }
 
     .texto-rodape {
         color: white;
         font-size: 11px;
         margin-top: 10px;
-
     }
-} */
+}
+
+
+/* Estilos para o menu hamburger e responsividade */
+@media screen and (max-width: 700px) {
+    .hamburger {
+        display: flex;
+        /* Mostra o hamburger em telas pequenas */
+        /* background-color: red; */
+        position: relative;
+        top: -80%;
+        left: 2%;
+    }
+
+    nav {
+        display: none;
+        /* Oculta o nav em telas pequenas */
+        flex-direction: column;
+        /* Alinha os links verticalmente */
+        position: absolute;
+        /* Permite que o nav apareça sobre o conteúdo */
+        background-color: #f5f070;
+        /* Cor de fundo do menu */
+        width: 100%;
+        top: 15vh;
+        /* Abaixo do header */
+        left: 0;
+        z-index: 2;
+        /* Para garantir que fique acima do vídeo */
+    }
+
+    nav.active {
+        display: flex;
+        /* Mostra o nav quando ativo */
+    }
+
+    nav a {
+        margin: 10px 0;
+        /* Margem vertical para links */
+    }
+
+    /* Estilos para quando o menu estiver aberto */
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        /* Primeiro barra */
+        
+        z-index: 3;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+        /* Remove a segunda barra */
+        
+            }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+        /* Terceira barra */
+
+        z-index: 3;
+    }
+
+
+    video {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        object-fit: cover;
+        filter: brightness(60%);
+    }
+
+
+
+
+
+
+    
+
+}
