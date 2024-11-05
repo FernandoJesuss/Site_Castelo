@@ -1,38 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
-
-
-
-
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
-
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
 
 
+html {
+    scroll-snap-type: y mandatory;
 
-
-
-
-
-
-body {
-    font-family: 'Arial', sans-serif;
-    
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
 }
 
-.logo{
+Video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(60%);
+
+
+}
+
+.logo {
     display: flex;
 
 
@@ -42,23 +37,29 @@ body {
 
 
 .loogo {
-    width: 8%;
-    height: 10%;
-    padding: 1%;
+    width: 12%;
+    height: 12%;
+    padding: 2%;
     left: 2%;
-    
-display: flex;
-position: relative;
-color: rgb(17, 8, 8);
 
+    display: flex;
+    position: relative;
+    color: rgb(17, 8, 8);
+cursor: pointer;
 }
 
 
 
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
 header {
-    background-color: #f5f070;    
-    width: 100%;   
-    height: 10vh;
+    top: -25px;
+    background-color: #f5f070;
+    width: 100%;
+    height: 15vh;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 2;
@@ -67,78 +68,206 @@ header {
 
 
 nav {
-    background-color: #4A148C; /* Roxo */
+    background-color: #4A148C;
+    
     width: 100%;
     padding: 10px 0;
     text-align: center;
-    margin-top: -2.3%;
+    margin-top: -3%;
 }
+
 nav a {
-    color: #FFB300; /* Amarelo */
+    color: #FFB300;
+    
     text-decoration: none;
     padding: 10px 15px;
     margin: 0 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s;
 }
+
 nav a:hover {
-    background-color: #FFC107; /* Amarelo mais claro */
+    filter: #ff5;
+    
+    filter: brightness(120%) contrast(150%) sepia(30%);
+    
+    
+}
+
+main {
+    position: relative;
+    z-index: 2;
+    
+    padding: 50%;
+    
+    color: rgb(189, 19, 19);
+    
 }
 
 #audioButton {
-    display: flex;
+    display: flex; 
     position: relative;
     left: 90%;
     border-radius: 10px;
-    top: 40%;
+     /* top: 40%;  */
+    z-index: 2;
+    border: none;
     
     }
 
-
-main {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-}
-h1, h2 {
-    margin: 10px 0;
-}
-footer {
-    margin-top: 20px;
-    font-size: 0.8em;
-    color: #777;
-    position: relative;
-    z-index: 2;
-}
 button {
-    background-color: #FFB300; /* Amarelo */
-    color: #79296b; /* Roxo */
+    display: flex;
+    background-color: #f5f070;
+    color: #c305f3;
+    top: -18px;
     border: none;
-    padding: 10px 20px;
+    padding: 7px 20px;
     cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    left: 90%;
     transition: background-color 0.3s;
 }
+
 button:hover {
-    background-color: #FFC107; /* Amarelo mais claro */
+    background-color: #f1fcb9;
+    
 }
+
 .character {
     margin: 10px 0;
 }
+
 .character img {
     width: 100px;
     height: auto;
     border-radius: 10px;
 }
-video {
-    position: absolute;
-    top: 87px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-    opacity: 0.5; /* Ajusta a opacidade do vídeo */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 600px) {
+
+    .logo {
+        filter: brightness(100);
+        position: relative;
+        margin: 0 auto;
+        width: 260px;
+        margin-top: 15px;   
+
+    }
+
+    .tes {
+        position: relative;
+        margin-top: -200px;
+        color: white;
+        font-size: 25px;     
+        
+    }
+
+h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: -55px;   
+
 }
+
+    .Sub-titulo {
+        color: white;
+    }
+
+    Video,
+    .img-tesla {
+        width: 100%; 
+        height: 100%; 
+        position: absolute; 
+        top: 0;
+        left: 0;
+        z-index: -1; 
+        object-fit: cover;
+        filter: brightness(60%);
+    }
+
+    .formulario {
+        position: absolute;
+        top: 50px;
+        width: 310px;
+        height: 80%;
+        z-index: 3;
+        transition: -0.8s;
+        margin-top: 9%;
+        translate: -165px;
+        
+    }
+
+    button {
+        background-color: rgba(34, 34, 34, 0.8);
+        color: white;
+        padding: 7px 30px;
+        border-radius: 15px; 
+        border: none;
+        cursor: pointer;       
+    }
+
+    .item {
+        position: relative;
+        width: 100vw; 
+        height: 55vh;
+        display: flex; 
+        justify-content: space-between; 
+        flex-direction: column; 
+        scroll-snap-align: start;
+
+    }
+
+    .texto-rodape {
+        color: white;
+        font-size: 11px;
+        margin-top: 10px;
+
+    }
+} */
