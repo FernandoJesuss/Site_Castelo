@@ -52,28 +52,23 @@ header {
     height: 15vh;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-/* display: none; */
+
 }
 
 .hamburger {
     display: none;
-    /* Oculta o hamburger por padrão */
     flex-direction: column;
-    /* Alinha as barras verticalmente */
     cursor: pointer;
     z-index: 3;
-    /* Para garantir que fique acima de outros elementos */
+
 }
 
 .bar {
     height: 3px;
     width: 30px;
     background-color: #4a148c;
-    /* Cor das barras */
     margin: 4px 0;
-    /* Espaçamento entre as barras */
     transition: all 0.3s ease;
-    /* Transição suave */
 }
 
 nav {
@@ -85,7 +80,7 @@ nav {
     text-align: center;
     position: relative;
     top: -100px;
-    
+
 }
 
 nav a {
@@ -107,7 +102,7 @@ main {
     position: relative;
     z-index: 2;
     padding: 50px;
-    /* Ajuste conforme necessário */
+
 }
 
 #audioButton {
@@ -158,22 +153,17 @@ footer {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         position: relative;
         margin-top: -4%;
-    
+
     }
-
-
-
 
     .logo {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        /* filter: brightness(100); */
-        /* margin: 0 auto; */
         width: 50%;
         margin-top: 15px;
-        
+
     }
 
     h1 {
@@ -197,8 +187,6 @@ footer {
         transform: translate(-165px);
     }
 
-
-
     #audioButton {
         display: flex;
         align-items: center;
@@ -209,11 +197,10 @@ footer {
         font-size: 15px;
         font-weight: 500;
         position: relative;
-        
         border-radius: 10px;
         z-index: 1;
     }
-    
+
     button {
         display: flex;
         color: #c305f3;
@@ -231,13 +218,15 @@ footer {
 
 
     .texto {
-        display: inline; /* Exibe o texto por padrão */
+        display: inline;
+
     }
-    
+
     .hidden {
-        display: none; /* Classe para esconder o texto */
+        display: none;
+
     }
-    
+
 
     .item {
         width: 100vw;
@@ -260,8 +249,6 @@ footer {
 @media screen and (max-width: 700px) {
     .hamburger {
         display: flex;
-        /* Mostra o hamburger em telas pequenas */
-        /* background-color: red; */
         position: relative;
         top: -80%;
         left: 2%;
@@ -269,49 +256,39 @@ footer {
 
     nav {
         display: none;
-        /* Oculta o nav em telas pequenas */
         flex-direction: column;
-        /* Alinha os links verticalmente */
         position: absolute;
-        /* Permite que o nav apareça sobre o conteúdo */
         background-color: #f5f070;
-        /* Cor de fundo do menu */
         width: 100%;
         top: 15vh;
-        /* Abaixo do header */
         left: 0;
         z-index: 2;
-        /* Para garantir que fique acima do vídeo */
+
     }
 
     nav.active {
         display: flex;
-        /* Mostra o nav quando ativo */
+
     }
 
     nav a {
         margin: 10px 0;
-        /* Margem vertical para links */
+
     }
 
     /* Estilos para quando o menu estiver aberto */
     .hamburger.active .bar:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
-        /* Primeiro barra */
-        
         z-index: 3;
     }
 
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
-        /* Remove a segunda barra */
-        
-            }
+
+    }
 
     .hamburger.active .bar:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
-        /* Terceira barra */
-
         z-index: 3;
     }
 
@@ -326,12 +303,5 @@ footer {
         object-fit: cover;
         filter: brightness(60%);
     }
-
-
-
-
-
-
-    
 
 }

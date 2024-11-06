@@ -1,18 +1,5 @@
 //Ativar ou Desativar o áudio
 
-// document.getElementById("infoButton").onclick = function() {
-//     var infoText = document.getElementById("infoText");
-//     infoText.style.display = infoText.style.display === "none" ? "block" : "none";
-// };
-
-// document.getElementById("audioButton").onclick = function() {
-//     var video = document.getElementById("backgroundVideo");
-//     video.muted = !video.muted;
-//     this.textContent = video.muted ?  "🔇 Desativar Áudio" : "🔊 Ativar Áudio";
-// };
-
-
-
 document.getElementById("audioButton").onclick = function() {
     var video = document.getElementById("backgroundVideo");
     video.muted = !video.muted;
@@ -25,17 +12,7 @@ document.getElementById("audioButton").onclick = function() {
     icon.textContent = video.muted ? "🔇" : "🔊"; // Atualiza o ícone
 };
 
-
-
-
-
-
-
-
-
-
 //Menu Hambuger
-
 
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
