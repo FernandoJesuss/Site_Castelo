@@ -164,7 +164,8 @@ button:hover {
 
 .profile {
     display: flex;
-    padding: 7.1%;
+    /* padding: 7.1%; */
+    padding: 9.6%;
     margin-bottom: 120px;
     align-items: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
