@@ -1,9 +1,9 @@
+// Uncheck radio buttons (unfortunatley this cannot be done with css alone)
 
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active'); // Adiciona/remover a classe active
-    });
-
+document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+  radio.addEventListener("click", (e) => {
+    e.preventDefault();
+    // setting a timeout enables this hack to work
+    setTimeout(() => (radio.checked = !radio.checked), 0);
+  });
+});
