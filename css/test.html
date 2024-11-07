@@ -1,34 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../test.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernando Santos - Uma história de bem</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 30px;
+    }
+
+    .profile-info h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .profile-info p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .profile-info a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    .profile-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-
-    <div class="hamburger" id="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+  <div class="container">
+    <div class="profile">
+      <img src="../img/img_sobre.png" alt="Fernando Santos" class="profile-image">
+      <div class="profile-info">
+        <h2>Fernando Santos</h2>
+        <p>Uma história de bem</p>
+        <p>Sou um Desenvolvedor Front-End com formação em Sistemas de Informação e experiência em manutenção de sistemas web. Minha paixão pela tecnologia me motiva a buscar constantemente o aprimoramento das minhas habilidades técnicas.</p>
+        <p>Durante minha carreira anterior, desenvolvi habilidades sólidas em resolução de problemas, análise de dados e trabalho em equipe. Essas competências soo altannente transferíveis para a área de programação, onde posso aplicar minha capacidade de resolver desafios complexos e colaborar em projetos empolgantes.</p>
+        <p>Atualmente, estou cursando a formação Full Stack pelo DevClub. Sempre busco projetos práticos para aplicar meus conhecimentos e aprimorar ainda mais minhas habilidades técnicas. Se você está em busca de um desenvolvedor comprometido, apaixonado e pronto para enfrentar novos desafios, estou à disposição!</p>
+        <a href="https://www.linkedin.com/in/fernando-santos-a8b4b3229/">Leia mais</a>
+      </div>
     </div>
-    <nav id="navMenu">
-        <a href="#sobre">Sobre</a>
-        <a href="#personagens">Personagens</a>
-        <a href="#cenas">Cenas Memoráveis</a>
-        <a href="#contato">Contato</a>
-    </nav>
-    
-
-
-
-
-
-
-
-
-
-    <script src="./test.js"></script>
+  </div>
 </body>
 </html>
