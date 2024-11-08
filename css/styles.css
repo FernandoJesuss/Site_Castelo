@@ -448,7 +448,7 @@ footer {
 
 
 /* Media Queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     header {
         display: flexbox;
         background-color: #f5f070;
@@ -565,15 +565,8 @@ footer {
         align-items: center;
         text-align: center;
         margin-left: 15rem;
-        /* Pode ajustar conforme necessário */
         width: auto;
-        /* Definindo um valor padrão */
         height: auto;
-        /* Definindo um valor padrão */
-
-
-
-
     }
 
     /* Positioning and style for paragraph */
@@ -614,7 +607,7 @@ footer {
 
 
 /* Estilos para o menu hamburger e responsividade */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1228px) {
     .hamburger {
         display: flex;
         /* position: absolute; */
@@ -1030,7 +1023,7 @@ footer {
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
 
     #personagens {
         display: flex;
@@ -1096,12 +1089,9 @@ footer {
 
 
     .circle-wrapper {
-        display: none;
-        max-width: 100%;
-        max-height: 100%;
-        flex-wrap: wrap;
+      
         justify-content: center;
-        left: 4rem;
+        left: 2.6rem;
         top: 25rem;
         border: 1px solid #0f3e5d;
         position: relative;
@@ -1164,7 +1154,14 @@ footer {
 
 
 
-
+    footer {
+        display: flex;
+        position: relative;
+        top: 30rem;
+        text-align: center;
+        padding: 20px;
+        background-color: #f1f1f1;
+    }
 
 
 
