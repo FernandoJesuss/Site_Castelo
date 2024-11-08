@@ -554,6 +554,23 @@ footer {
 
     }
 
+    /* Positioning and style for paragraph */
+    p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        /* margin-left: 15rem; */
+        top: 0.2rem;
+        bottom: 2rem;
+        font-size: 1.08rem; /* Estilo padrão para telas maiores */
+    }
+
+
+
+
+
+
     footer {
         position: relative;
         top: 15rem;
@@ -563,21 +580,7 @@ footer {
         
     }
 
-        /* Positioning and style for paragraph*/
-        p {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            justify-content: center;
-            position: relative;
-            margin-left: 15rem;
-            top: 0.2rem;
-            bottom: 2rem;
-    
-            /* color: rgb(241, 15, 15); */
-            font-size: 1.08rem;
-    
-        }
+       
 
 
 
