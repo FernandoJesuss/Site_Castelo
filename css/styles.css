@@ -161,6 +161,19 @@ button:hover {
 }
 
 
+#personagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-left: 12rem; */
+    /* left: 8.5rem; */
+/* width: 40%;
+height: 10%; */
+
+}
+
+
 .psg {
 display: flex;
 align-items: center;
@@ -537,9 +550,31 @@ footer {
 
 }
 
+@media screen and (max-width: 1700px) {
+
+
+    #personagens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 15rem; /* Pode ajustar conforme necessário */
+        width: auto; /* Definindo um valor padrão */
+        height: auto; /* Definindo um valor padrão */
+    
+    
+    
+    
+    }
+
+    
+}
+
+
+
 
 /* Estilos para o menu hamburger e responsividade */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1400px) {
     .hamburger {
         display: flex;
         /* position: absolute; */
@@ -600,6 +635,19 @@ footer {
 
     }
 
+#personagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: -7rem;
+width: 40%;
+height: auto;
+
+/* background-color: red; */
+
+
+}
 
     
 
@@ -608,11 +656,15 @@ footer {
     
 .psg {
     display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 15rem;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-weight: 700;
-    font-size: 50px;
+    font-weight: 00;
+    font-size: 20px;
     
     }
     
@@ -634,7 +686,7 @@ footer {
         }
     
         /* Positioning and style for paragraph*/
-    p- {
+    p-{
         position: absolute;
         bottom: 2rem;
         right: 2rem;
