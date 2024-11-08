@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *,
-::before,::after {
+::before,
+::after {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
@@ -19,21 +20,7 @@ html {
 body {
     color: rgb(243, 239, 9);
     overflow-x: hidden;
-
-
-
-
-
-
-
-
-    
-
 }
-
-
-
-
 
 #canvas {
     width: 100%;
@@ -123,8 +110,6 @@ nav a:hover {
 main {
     position: relative;
     z-index: 2;
-     
-    
 
 }
 
@@ -168,23 +153,21 @@ button:hover {
     text-align: center;
     /* margin-left: 12rem; */
     /* left: 8.5rem; */
-/* width: 40%;
+    /* width: 40%;
 height: 10%; */
 
 }
 
 
 .psg {
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-font-weight: 700;
-font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
 
 }
-
-
 
 
 /* Hide radio input element */
@@ -198,35 +181,35 @@ input[type="radio"] {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
-    
-    }
 
-    /* Positioning and style for paragraph*/
+}
+
+/* Positioning and style for paragraph*/
 p- {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
     color: white;
     font-size: 0.8rem;
-    
-    }
+
+}
 
 
-    .circle-wrapper {
-        left: 37rem;
-        top: 8rem;
-        border:  1px solid #0f3e5d;
-        position: relative;
-        border-radius: 9999px;
-        display: grid;
-        width: 700px;
-        height: 700px;
-        grid-template-areas: "stack";
-        place-content: center;
-        
-        }
+.circle-wrapper {
+    left: 37rem;
+    top: 8rem;
+    border: 1px solid #0f3e5d;
+    position: relative;
+    border-radius: 9999px;
+    display: grid;
+    width: 700px;
+    height: 700px;
+    grid-template-areas: "stack";
+    place-content: center;
 
-        /* Label styles inside the circle wrapper */
+}
+
+/* Label styles inside the circle wrapper */
 label {
     grid-area: stack;
     width: 5rem;
@@ -243,32 +226,32 @@ label {
     transition-duration: 0.5s;
     cursor: pointer;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
-    
-    }
-    
-    /* Imagem styles */
-    .relogio {
-    width: 5rem; 
-    height: 5rem; 
-    border-radius: 50%; 
-    object-fit: cover; 
+
+}
+
+/* Imagem styles */
+.relogio {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
     transition: all 1s ease-in-out;
-    
-    }
 
-    svg {
-        transition: all 0.5s ease-in-out;
-        position: absolute;
-        inset: 0 0 0 -25%;
-        margin: auto;
-        width: 125px;
-        opacity: 0;
-        z-index: -10;
-        
-        }
+}
+
+svg {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    inset: 0 0 0 -25%;
+    margin: auto;
+    width: 125px;
+    opacity: 0;
+    z-index: -10;
+
+}
 
 
-        /*Centered element styles*/
+/*Centered element styles*/
 .center-element {
     position: absolute;
     top: 0;
@@ -288,10 +271,10 @@ label {
     letter-spacing: 0.05em;
     color: #cbd5e0;
     font-size: 1.125rem;
-    
-    }
 
-    /*Before pseudo-element for center-element */
+}
+
+/*Before pseudo-element for center-element */
 .center-element::before {
     content: "";
     position: absolute;
@@ -303,42 +286,41 @@ label {
     border-radius: 50%;
     z-index: -10;
     transition: all 1s;
-    
-    }
 
-    /*Checked radio input style */
-input:checked + label {
+}
+
+/*Checked radio input style */
+input:checked+label {
     transform: none !important;
     transition-duration: 1s;
-    
-    }
 
-    
+}
+
+
 /*Imagem transform on checked */
-input:checked + label > img {
+input:checked+label>img {
     transform: scale(2);
-    
-    }
 
-    /*svg transform on checked */
-input:checked + label >svg {
+}
+
+/*svg transform on checked */
+input:checked+label>svg {
     opacity: 1;
     transform: scale(2.25) rotate(45deg);
     transition-delay: 700ms, 500ms, 2000ms;
-    
-    }
 
-    /* Avatar transform styles*/
+}
+
+/* Avatar transform styles*/
 .avatar {
     --radius: 22rem;
     --d: calc(var(--i) / var(--total));
     --r-offset: -0.15turn;
     --r-amount: 1turn;
     --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
-    transform:  rotate(var(--r)) translate(var(--radius))
-    rotate(calc(-1 * var(--r)));
-    
-    }
+    transform: rotate(var(--r)) translate(var(--radius)) rotate(calc(-1 * var(--r)));
+
+}
 
 
 
@@ -436,9 +418,11 @@ input:checked + label >svg {
 
 
 footer {
+    position: relative;
+    top: 15rem;
     text-align: center;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: #d21717;
 }
 
 /* Media Queries */
@@ -451,7 +435,7 @@ footer {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         position: relative;
         margin-top: -4%;
-        
+
 
 
     }
@@ -558,16 +542,46 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 15rem; /* Pode ajustar conforme necessário */
-        width: auto; /* Definindo um valor padrão */
-        height: auto; /* Definindo um valor padrão */
-    
-    
-    
-    
+        margin-left: 15rem;
+        /* Pode ajustar conforme necessário */
+        width: auto;
+        /* Definindo um valor padrão */
+        height: auto;
+        /* Definindo um valor padrão */
+
+
+
+
     }
 
+    footer {
+        position: relative;
+        top: 15rem;
+        text-align: center;
+        padding: 20px;
+        background-color: #d21717;
+        
+    }
+
+        /* Positioning and style for paragraph*/
+        p {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            margin-left: 15rem;
+            top: 0.2rem;
+            bottom: 2rem;
     
+            /* color: rgb(241, 15, 15); */
+            font-size: 1.08rem;
+    
+        }
+
+
+
+
 }
 
 
@@ -631,46 +645,46 @@ footer {
         object-fit: cover;
         filter: brightness(60%);
 
-        
+
 
     }
 
-#personagens {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    left: -7rem;
-width: 40%;
-height: auto;
+    #personagens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        left: -7rem;
+        width: 40%;
+        height: auto;
 
-/* background-color: red; */
-
-
-}
-
-    
+        /* background-color: red; */
 
 
-
-    
-.psg {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 15rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-weight: 00;
-    font-size: 20px;
-    
     }
-    
-    
-    
-    
+
+
+
+
+
+
+    .psg {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 15rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 00;
+        font-size: 20px;
+
+    }
+
+
+
+
     /* Hide radio input element */
     input[type="radio"] {
         position: absolute;
@@ -682,10 +696,10 @@ height: auto;
         clip: rect(0, 0, 0, 0);
         white-space: nowrap;
         border-width: 0;
-        
-        }
-    
-        /* Positioning and style for paragraph*/
+
+    }
+
+    /* Positioning and style for paragraph*/
     p {
         display: flex;
         justify-content: center;
@@ -694,36 +708,36 @@ height: auto;
         position: relative;
         top: 1rem;
         bottom: 2rem;
-        
+
         color: rgb(241, 15, 15);
         font-size: 0.8rem;
-        
-        }
-    
-    
-        .circle-wrapper {
-            display: none;
-            max-width: 100%;
-            max-height: 100%;
-            flex-wrap: wrap;
-            justify-content: center;
-            left: 4rem;
-            top: 18rem;
-            border:  1px solid #0f3e5d;
-            position: relative;
-            border-radius: 9999px;
-            display: grid;
-            width: 310px;
-            height: 310px;
-            grid-template-areas: "stack";
-            place-content: center;
-            
-            
-            }
-    
-            /* Label styles inside the circle wrapper */
+
+    }
+
+
+    .circle-wrapper {
+        display: none;
+        max-width: 100%;
+        max-height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        left: 2rem;
+        top: 18rem;
+        border: 1px solid #0f3e5d;
+        position: relative;
+        border-radius: 9999px;
+        display: grid;
+        width: 310px;
+        height: 310px;
+        grid-template-areas: "stack";
+        place-content: center;
+
+
+    }
+
+    /* Label styles inside the circle wrapper */
     label {
-        
+
         grid-area: stack;
         width: 2rem;
         height: 2rem;
@@ -740,18 +754,18 @@ height: auto;
         transition-duration: 0.5s;
         cursor: pointer;
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
-        
-        }
-        
-        /* Imagem styles */
-        .relogio {
-        width: 2rem; 
-        height: 2rem; 
-        border-radius: 50%; 
-        object-fit: cover; 
+
+    }
+
+    /* Imagem styles */
+    .relogio {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        object-fit: cover;
         transition: all 1s ease-in-out;
-        
-        }
+
+    }
 
 
 
@@ -763,26 +777,25 @@ height: auto;
         --r-offset: -0.15turn;
         --r-amount: 1turn;
         --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
-        transform:  rotate(var(--r)) translate(var(--radius))
-        rotate(calc(-1 * var(--r)));
-        
-        }
+        transform: rotate(var(--r)) translate(var(--radius)) rotate(calc(-1 * var(--r)));
+
+    }
 
 
-        svg {
-            transition: all 0.5s ease-in-out;
-            position: absolute;
-            inset: 0 0 0 -25%;
-            margin: auto;
-            width: 100%;
-            opacity: 0;
-            z-index: -10;
-          
-            
-            }
-    
-    
-            /*Centered element styles*/
+    svg {
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        inset: 0 0 0 -25%;
+        margin: auto;
+        width: 100%;
+        opacity: 0;
+        z-index: -10;
+
+
+    }
+
+
+    /*Centered element styles*/
     .center-element {
         position: absolute;
         top: 0;
@@ -802,10 +815,10 @@ height: auto;
         letter-spacing: 0.05em;
         color: #cbd5e0;
         font-size: 1rem;
-        
-        }
-    
-        /*Before pseudo-element for center-element */
+
+    }
+
+    /*Before pseudo-element for center-element */
     .center-element::before {
         content: "";
         position: absolute;
@@ -817,32 +830,30 @@ height: auto;
         border-radius: 50%;
         z-index: -10;
         transition: all 1s;
-        
-        }
-    
-        /*Checked radio input style */
-    input:checked + label {
+
+    }
+
+    /*Checked radio input style */
+    input:checked+label {
         transform: none !important;
         transition-duration: 1s;
-        
-        }
-    
-        
+
+    }
+
+
     /*Imagem transform on checked */
-    input:checked + label > img {
+    input:checked+label>img {
         transform: scale(4);
-        
-        }
-    
-        /*svg transform on checked */
-    input:checked + label >svg {
+
+    }
+
+    /*svg transform on checked */
+    input:checked+label>svg {
         opacity: 1;
         transform: scale(2.25) rotate(45deg);
         transition-delay: 700ms, 500ms, 2000ms;
-        
-        }
 
-        
+    }
 
 
 
@@ -850,14 +861,16 @@ height: auto;
 
 
 
-    
+
+
+
 
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        
+
     }
 
     .profile {
@@ -868,7 +881,7 @@ height: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
 
     }
 
@@ -904,76 +917,76 @@ height: auto;
 
     }
 
-    
-      .profile-info p {
-        
+
+    .profile-info p {
+
         margin: 30px;
         margin-bottom: 50px;
 
 
-    color: #333333;
-    
-    font-size: 1.2em;
-    line-height: 1.5;
+        color: #333333;
+
+        font-size: 1.2em;
+        line-height: 1.5;
 
 
 
 
-}
+    }
 
-.profile-info a {
+    .profile-info a {
 
-    text-decoration: none;
-    background-color: #FF4500;
-    color: #FFFFFF;
-    /* padding: 10px 20px; */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s;
-
-
-
-
-}
-
-.profile-info a:hover {
-    background-color: #FF6347;
-
-}
+        text-decoration: none;
+        background-color: #FF4500;
+        color: #FFFFFF;
+        /* padding: 10px 20px; */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: background-color 0.3s;
 
 
 
 
+    }
 
+    .profile-info a:hover {
+        background-color: #FF6347;
+
+    }
 
 
 
 
 
 
-main {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-     
-    
-
-} 
 
 
 
 
-footer {
-    display: flex;
-    position: relative;
-    top: 25rem;
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-}
+
+    main {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+
+
+
+    }
+
+
+
+
+    footer {
+        display: flex;
+        position: relative;
+        top: 25rem;
+        text-align: center;
+        padding: 20px;
+        background-color: #f1f1f1;
+    }
 
 
 
@@ -1001,19 +1014,19 @@ footer {
         align-items: center;
         text-align: center;
         left: -7rem;
-    width: 40%;
-    height: auto;
-    
-    /* background-color: red; */
-    
-    
+        width: 40%;
+        height: auto;
+
+        /* background-color: red; */
+
+
     }
-    
-        
-    
-    
-    
-        
+
+
+
+
+
+
     .psg {
         display: flex;
         position: relative;
@@ -1025,103 +1038,102 @@ footer {
         text-align: center;
         font-weight: 00;
         font-size: 20px;
-        
-        }
-        
-        
-        
-        
-        /* Hide radio input element */
-        input[type="radio"] {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
-            
-            }
-        
-            /* Positioning and style for paragraph*/
-        p-{
-            position: absolute;
-            bottom: 2rem;
-            right: 2rem;
-            color: white;
-            font-size: 0.8rem;
-            
-            }
-        
-        
-            .circle-wrapper {
-                display: none;
-                max-width: 100%;
-                max-height: 100%;
-                flex-wrap: wrap;
-                justify-content: center;
-                left: 4rem;
-                top: 25rem;
-                border:  1px solid #0f3e5d;
-                position: relative;
-                border-radius: 9999px;
-                display: grid;
-                width: 310px;
-                height: 310px;
-                grid-template-areas: "stack";
-                place-content: center;
-                
-                
-                }
-        
-                /* Label styles inside the circle wrapper */
-        label {
-            
-            grid-area: stack;
-            width: 2rem;
-            height: 2rem;
-            /* right: 1.5rem; */
-            border-radius: 9999px;
-            border: 1px solid #738088;
-            display: grid;
-            place-content: center;
-            background-color: rgba(255, 255, 255, 02);
-            position: relative;
-            color: #87ceeb;
-            font-size: 1.25rem;
-            transition-property: all;
-            transition-duration: 0.5s;
-            cursor: pointer;
-            box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
-            
-            }
-            
-            /* Imagem styles */
-            .relogio {
-            width: 2rem; 
-            height: 2rem; 
-            border-radius: 50%; 
-            object-fit: cover; 
-            transition: all 1s ease-in-out;
-            
-            }
-    
-    
-    
-    
-        /* Avatar transform styles*/
-        .avatar {
-            --radius: 9rem;
-            --d: calc(var(--i) / var(--total));
-            --r-offset: -0.15turn;
-            --r-amount: 1turn;
-            --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
-            transform:  rotate(var(--r)) translate(var(--radius))
-            rotate(calc(-1 * var(--r)));
-            
-            }
+
+    }
+
+
+
+
+    /* Hide radio input element */
+    input[type="radio"] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+
+    }
+
+    /* Positioning and style for paragraph*/
+    p- {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        color: white;
+        font-size: 0.8rem;
+
+    }
+
+
+    .circle-wrapper {
+        display: none;
+        max-width: 100%;
+        max-height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        left: 4rem;
+        top: 25rem;
+        border: 1px solid #0f3e5d;
+        position: relative;
+        border-radius: 9999px;
+        display: grid;
+        width: 310px;
+        height: 310px;
+        grid-template-areas: "stack";
+        place-content: center;
+
+
+    }
+
+    /* Label styles inside the circle wrapper */
+    label {
+
+        grid-area: stack;
+        width: 2rem;
+        height: 2rem;
+        /* right: 1.5rem; */
+        border-radius: 9999px;
+        border: 1px solid #738088;
+        display: grid;
+        place-content: center;
+        background-color: rgba(255, 255, 255, 02);
+        position: relative;
+        color: #87ceeb;
+        font-size: 1.25rem;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+
+    }
+
+    /* Imagem styles */
+    .relogio {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        object-fit: cover;
+        transition: all 1s ease-in-out;
+
+    }
+
+
+
+
+    /* Avatar transform styles*/
+    .avatar {
+        --radius: 9rem;
+        --d: calc(var(--i) / var(--total));
+        --r-offset: -0.15turn;
+        --r-amount: 1turn;
+        --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
+        transform: rotate(var(--r)) translate(var(--radius)) rotate(calc(-1 * var(--r)));
+
+    }
 
 
 
