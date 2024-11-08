@@ -9,19 +9,21 @@
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
 
+
 }
 
 html {
 
     background-color: #4a148c;
-
+    overflow-x: hidden;
 }
 
 body {
     color: rgb(243, 239, 9);
-    overflow-x: hidden;
+
 }
 
+/*Altera o efeito ao passa o mouse  no video*/
 #canvas {
     width: 100%;
     height: 100%;
@@ -48,13 +50,13 @@ video {
     width: 8%;
     height: 70%;
     top: 20%;
-    /* padding: 1%; */
     position: relative;
     cursor: pointer;
 
 
 }
 
+/* Alterar o header*/
 header {
     background-color: #f5f070;
     width: 100%;
@@ -85,7 +87,6 @@ nav {
     justify-content: center;
     color: #4a148c;
     width: 100%;
-    /* padding: 10px 0; */
     text-align: center;
     position: relative;
     top: -35px;
@@ -110,9 +111,9 @@ nav a:hover {
 main {
     position: relative;
     z-index: 2;
-
 }
 
+/*Alterar o Botão Audio*/
 #audioButton {
     display: flex;
     align-items: center;
@@ -145,6 +146,76 @@ button:hover {
     background-color: #f1fcb9;
 }
 
+/* Altera o quadro Sobre*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile {
+    display: flex;
+    padding: 9.6%;
+    margin-bottom: 120px;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #FFA500;
+
+}
+
+.profile-image {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info h1 {
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-size: 2.5em;
+    text-align: center;
+
+}
+
+.profile-info p {
+    margin: 30px;
+    color: #333333;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.profile-info a {
+
+    text-decoration: none;
+    background-color: #FF4500;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+
+}
+
+.profile-info a:hover {
+    background-color: #FF6347;
+
+}
+
+/* Altera o Titulo Personagens*/
+.psg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+
+}
+
 
 #personagens {
     display: flex;
@@ -158,43 +229,7 @@ height: 10%; */
 
 }
 
-
-.psg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-weight: 700;
-    font-size: 50px;
-
-}
-
-
-/* Hide radio input element */
-input[type="radio"] {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-
-}
-
-/* Positioning and style for paragraph*/
-p- {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    color: white;
-    font-size: 0.8rem;
-
-}
-
-
+/*Altera o circulo*/
 .circle-wrapper {
     left: 37rem;
     top: 8rem;
@@ -209,49 +244,7 @@ p- {
 
 }
 
-/* Label styles inside the circle wrapper */
-label {
-    grid-area: stack;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 9999px;
-    border: 1px solid #738088;
-    display: grid;
-    place-content: center;
-    background-color: rgba(255, 255, 255, 02);
-    position: relative;
-    color: #87ceeb;
-    font-size: 1.25rem;
-    transition-property: all;
-    transition-duration: 0.5s;
-    cursor: pointer;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
-
-}
-
-/* Imagem styles */
-.relogio {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: all 1s ease-in-out;
-
-}
-
-svg {
-    transition: all 0.5s ease-in-out;
-    position: absolute;
-    inset: 0 0 0 -25%;
-    margin: auto;
-    width: 125px;
-    opacity: 0;
-    z-index: -10;
-
-}
-
-
-/*Centered element styles*/
+/*Estilos de elementos centralizados*/
 .center-element {
     position: absolute;
     top: 0;
@@ -274,7 +267,7 @@ svg {
 
 }
 
-/*Before pseudo-element for center-element */
+/*Antes do pseudoelemento para o elemento central */
 .center-element::before {
     content: "";
     position: absolute;
@@ -289,7 +282,41 @@ svg {
 
 }
 
-/*Checked radio input style */
+/* Ocultar elemento de entrada de rádio */
+input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+
+}
+
+/* Estilos de rótulo dentro do wrapper do círculo */
+label {
+    grid-area: stack;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 9999px;
+    border: 1px solid #738088;
+    display: grid;
+    place-content: center;
+    background-color: rgba(255, 255, 255, 02);
+    position: relative;
+    color: #87ceeb;
+    font-size: 1.25rem;
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+
+}
+
+/* Estilo de entrada de rádio verificado */
 input:checked+label {
     transform: none !important;
     transition-duration: 1s;
@@ -297,13 +324,13 @@ input:checked+label {
 }
 
 
-/*Imagem transform on checked */
+/* Transformação de imagem em verificado*/
 input:checked+label>img {
     transform: scale(2);
 
 }
 
-/*svg transform on checked */
+/* transformação svg em verificado */
 input:checked+label>svg {
     opacity: 1;
     transform: scale(2.25) rotate(45deg);
@@ -311,7 +338,7 @@ input:checked+label>svg {
 
 }
 
-/* Avatar transform styles*/
+/* Estilos de transformação de Avatar*/
 .avatar {
     --radius: 22rem;
     --d: calc(var(--i) / var(--total));
@@ -323,99 +350,37 @@ input:checked+label>svg {
 }
 
 
-
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.profile {
-    display: flex;
-    /* padding: 7.1%; */
-    padding: 9.6%;
-    margin-bottom: 120px;
-    align-items: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    background-color: #FFA500;
-
-}
-
-.profile-image {
-    width: 550px;
-    height: 550px;
+/* Estilos de imagem  */
+.relogio {
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    margin-right: 10px;
-}
-
-.profile-info h1 {
-
-    margin-bottom: 10px;
-
-
-
-    color: #FFFFFF;
-    font-size: 2.5em;
-    text-align: center;
-
-
+    object-fit: cover;
+    transition: all 1s ease-in-out;
 
 }
 
-.profile-info p {
-
-    margin: 30px;
-    /* margin-bottom: 50px; */
-
-
-    color: #333333;
-    /* Texto escuro para legibilidade */
-    font-size: 1.2em;
-    line-height: 1.5;
-
-
-
-
-}
-
-.profile-info a {
-
-    text-decoration: none;
-    background-color: #FF4500;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s;
-
-
-
-
-}
-
-.profile-info a:hover {
-    background-color: #FF6347;
+svg {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    inset: 0 0 0 -25%;
+    margin: auto;
+    width: 125px;
+    opacity: 0;
+    z-index: -10;
 
 }
 
 
+/* Posicionamento e estilo para parágrafo */
+/* p- {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    color: white;
+    font-size: 0.8rem;
 
-
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 footer {
     position: relative;
@@ -424,6 +389,63 @@ footer {
     padding: 20px;
     background-color: #d21717;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
@@ -563,7 +585,8 @@ footer {
         /* margin-left: 15rem; */
         top: 0.2rem;
         bottom: 2rem;
-        font-size: 1.08rem; /* Estilo padrão para telas maiores */
+        font-size: 1.08rem;
+        /* Estilo padrão para telas maiores */
     }
 
 
@@ -577,10 +600,10 @@ footer {
         text-align: center;
         padding: 20px;
         background-color: #d21717;
-        
+
     }
 
-       
+
 
 
 
