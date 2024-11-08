@@ -718,6 +718,9 @@ footer {
 
     }
 
+
+    
+
     /* Positioning and style for paragraph*/
     p {
         display: flex;
@@ -871,7 +874,7 @@ footer {
         opacity: 1;
         transform: scale(2.25) rotate(45deg);
         transition-delay: 700ms, 500ms, 2000ms;
-
+        
     }
 
 
@@ -974,6 +977,30 @@ footer {
         background-color: #FF6347;
 
     }
+
+
+    /*Checked radio input style */
+    input:checked+label {
+        transform: none !important;
+        transition-duration: 1s;
+
+    }
+
+
+    /*Imagem transform on checked */
+    input:checked+label>img {
+        transform: scale(4);
+
+    }
+
+    /*svg transform on checked */
+    input:checked+label>svg {
+        opacity: 1;
+        transform: scale(2.25) rotate(45deg);
+        transition-delay: 700ms, 500ms, 2000ms;
+
+    }
+
 
 
 
@@ -1140,9 +1167,51 @@ footer {
 
 
 
+    svg {
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        inset: 0 0 0 -50%;
+        margin: auto;
+        width: 7vh;
+        opacity: 0;
+        z-index: -10;
+
+
+    }
+
+
+    
+    /*Imagem transform on checked */
+    input:checked+label>img {
+        transform: scale(4);
+
+    }
+
+    /*svg transform on checked */
+    input:checked+label>svg {
+        opacity: 1;
+        transform: scale(3.60) rotate(-10deg);
+        transition-delay: 700ms, 500ms, 2000ms;
+        z-index: 10;
+        /* background-color: yellowgreen; */
+        
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     /* Avatar transform styles*/
     .avatar {
-        --radius: 9rem;
+        --radius: 10rem;
         --d: calc(var(--i) / var(--total));
         --r-offset: -0.15turn;
         --r-amount: 1turn;
@@ -1160,7 +1229,8 @@ footer {
         top: 30rem;
         text-align: center;
         padding: 20px;
-        background-color: #01fe12;
+        background-color: #f1f1f1;
+        background-color: yellowgreen;
     }
 
 
