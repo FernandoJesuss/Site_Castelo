@@ -73,26 +73,13 @@ box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
 
 /* Imagem styles */
 img {
-/* border-radius: 9999px;
-width: 100%;
-height: 100%;
-object-fit: cover;
-transition: all 1s ease-in-out; */
-
-
-
-
-width: 5rem; /* largura da imagem */
-height: 5rem; /* altura da imagem */
-border-radius: 50%; /* torna a imagem redonda */
-object-fit: cover; /* mantém a proporção da imagem */
-
+width: 5rem; 
+height: 5rem; 
+border-radius: 50%; 
+object-fit: cover; 
 transition: all 1s ease-in-out;
 
-
-
 }
-
 
 svg {
 transition: all 0.5s ease-in-out;
