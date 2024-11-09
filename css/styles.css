@@ -29,7 +29,7 @@ body {
 
 video {
     width: 100%;
-    height: 100%;
+    height: auto;
     position: absolute;
     top: 9%;
     left: 0;
@@ -147,7 +147,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
 }
 
 .profile {
@@ -560,9 +560,9 @@ footer {
 
     video {
         width: 100%;
-        height: 100%;
+        height: auto;
         position: absolute;
-        top: 0;
+        top: 7.9rem;
         left: 0;
         z-index: -1;
         object-fit: cover;
@@ -586,7 +586,7 @@ footer {
         position: relative;
         width: 100%;
         height: 100%;
-        top: 15rem;
+        top: -15rem;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -757,13 +757,14 @@ footer {
     .container {
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 100vh;
+        align-items: center;        
+        height: auto;
 
     }
 
     .profile {
         display: flex;
+        top: -40rem;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         background-color: #FFA500;
         position: relative;
@@ -860,7 +861,7 @@ footer {
     #personagens {
         display: flex;
         position: relative;
-        top: 23rem;
+        top: -44rem;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -910,7 +911,7 @@ footer {
     .circle-wrapper {
         justify-content: center;
         left: 2.6rem;
-        top: 25rem;
+        top: -40rem;
         border: 1px solid #0f3e5d;
         position: relative;
         border-radius: 9999px;
