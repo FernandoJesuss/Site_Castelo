@@ -9,18 +9,15 @@
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
 
-
 }
 
 html {
-
     background-color: #4a148c;
     overflow-x: hidden;
 }
 
 body {
     color: rgb(243, 239, 9);
-
 }
 
 /*Altera o efeito ao passa o mouse  no video*/
@@ -52,7 +49,6 @@ video {
     top: 20%;
     position: relative;
     cursor: pointer;
-
 
 }
 
@@ -216,16 +212,11 @@ button:hover {
 
 }
 
-
 #personagens {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* margin-left: 12rem; */
-    /* left: 8.5rem; */
-    /* width: 40%;
-height: 10%; */
 
 }
 
@@ -323,7 +314,6 @@ input:checked+label {
 
 }
 
-
 /* Transformação de imagem em verificado*/
 input:checked+label>img {
     transform: scale(2);
@@ -349,7 +339,6 @@ input:checked+label>svg {
 
 }
 
-
 /* Estilos de imagem  */
 .relogio {
     width: 5rem;
@@ -371,7 +360,6 @@ svg {
 
 }
 
-
 /* Posicionamento e estilo para parágrafo */
 /* p- {
     position: absolute;
@@ -390,7 +378,7 @@ footer {
     background-color: #d21717;
 }
 
-/* Media Queries max-width: 768px */
+/* Media Queries max-width: 480px */
 @media screen and (max-width: 480px) {
     header {
         display: flexbox;
@@ -705,7 +693,6 @@ footer {
         opacity: 0;
         z-index: -10;
 
-
     }
 
     /*Centered element styles*/
@@ -783,7 +770,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
 
     }
 
@@ -869,17 +855,8 @@ footer {
 
 }
 
-
-
-
-
-
-
-
-
-
+/*@media 768px*/
 @media screen and (max-width: 768px) {
-
     #personagens {
         display: flex;
         position: relative;
@@ -942,7 +919,6 @@ footer {
         height: 310px;
         grid-template-areas: "stack";
         place-content: center;
-
 
     }
 
