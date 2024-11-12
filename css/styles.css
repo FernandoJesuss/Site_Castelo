@@ -1221,7 +1221,7 @@ position: relative;
             position: relative;
             width: 100%;
             height: auto;
-            margin-top: -18rem;
+            margin-top: 7rem;
             
             /* top: -15rem; */
             align-items: center;
@@ -1332,7 +1332,7 @@ position: relative;
     
         .circle-wrapper {
           /* margin-left: 2.5rem; */
-            left: -0.5rem;/*2.6 max-width: 100%;*/
+            left: 0.1rem;/*2.6 max-width: 100%;*/
             max-height: 100%;
             flex-wrap: wrap;
             /*top: 61rem;4*/
@@ -1345,7 +1345,7 @@ position: relative;
             grid-template-areas: "stack";
             place-content: center;
             /* background-color: red; */
-            margin-top: 1rem;
+            margin-top: 2rem;
             
     
         } 
