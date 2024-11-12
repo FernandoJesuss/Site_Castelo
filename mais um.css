@@ -18,6 +18,20 @@ body {
   background-color: #fff;
 }
 
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/Adelaide.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
+}
+
 .videos-carr {
   display: flex;
   transition: transform 0.5s ease;
