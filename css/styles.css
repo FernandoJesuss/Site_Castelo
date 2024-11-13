@@ -7,13 +7,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
 
 }
 
 html {
     background-color: #4a148c;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 
 }
 
@@ -111,6 +111,9 @@ nav a:hover {
 main {
     position: relative;
     z-index: 2;
+
+    
+    
 }
 
 /*Alterar o Botão Audio*/
@@ -148,16 +151,22 @@ button:hover {
 
 /* Altera o quadro Sobre*/
 .container {
-    display: flex;
+    width: 100%;
+        display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
+    /* overflow: hidden; */
 
 }
 
 .profile {
+    width: 100%;
+    height: auto;
     display: flex;
-    padding: 9.6%;
+    position: relative;
+    top: -3.9rem;
+    /* padding: 9.6%; */
     margin-bottom: 120px;
     align-items: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -210,11 +219,19 @@ button:hover {
 /* Altera o Titulo Personagens*/
 .psg {
     display: flex;
+    width: 50%;
+    height: auto;
+    left: 25%;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 60px;   
+    position: relative;
+    margin-top: -3rem;
+    /* top: -2rem; */
+    /* background-color: red; */
+   
 
 }
 
@@ -370,6 +387,9 @@ svg {
 /* Altera o Titulo Cenas*/
 .csn-one {
     display: flex;
+    width: 50%;
+    height: auto;
+    left: 30rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -392,25 +412,21 @@ svg {
 
 
 
-hr {
+
+
+
+
+.turma {
     position: relative;
-top: 18rem;
-
-}
-
-
-
-.background-image {
-    position: absolute;
-    top:137rem;
+    top:30rem;
     left: 0;
     width: 100%;
-    height: 127vh;
-    background-image: url('../img/turma_One.png');
-    background-size: cover;
+    height: auto;
+    /* background-image: url('../img/turma_One.png'); */
+    /* background-size: cover;
     background-position: center;
-    filter: blur(1px);
-    z-index: -1;
+    filter: blur(1px);*/
+    z-index: -1; 
   }
 
 /*Carrossel de Videos*/
@@ -426,8 +442,8 @@ top: 18rem;
     width: 100%;/*80%*/
     max-width: 700px;/*800px*/
     overflow: hidden;
-    top: 43rem;
-    left: 65rem;/*35*/
+    top: -10rem;
+    left: 55rem;/*35*/
     border: 2px solid #333;
     border-radius: 10px;
     background-color: red;
@@ -492,14 +508,529 @@ iframe {
 } */
 
 footer {
-    position: relative;
-    top: 61.7rem;
+    width: 100%;
+    height: auto;
+    position:relative;
+    top: 0;
     text-align: center;
     padding: 20px;
-    background-color: #d21717;
+    /* background-color: #d21717; */
+    z-index: 2;
+
+    
+
+
 }
 
 /* Final do site desktop ========================================================*/
+
+/* @media screen and (max-width: 1400px) {
+
+    header {
+        display: flexbox;
+        background-color: #f5f070;
+        width: 100%;
+        height: 15vh;
+        
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        
+        margin-top: -4%;
+        z-index: 23;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        margin-top: 15px;
+
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 20%;
+        
+        margin-left: 3%;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #f5f070;
+        width: 100%;
+        top: 15vh;
+        left: 0;
+        z-index: 2;
+
+    }
+
+    nav.active {
+        display: flex;
+
+    }
+
+    nav a {
+        margin: 10px 0;
+
+    }
+
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        z-index: 3;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+        z-index: 3;
+    }
+
+
+    video {
+        width: 100%;
+        height: auto;
+        
+        position: absolute;
+        
+        left: 0;
+        z-index: -1;
+        
+        object-fit: cover;
+        filter: brightness(60%);
+        margin-top: -0.6rem;
+
+    }
+
+    #personagens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        left: -7rem;
+        width: 40%;
+        height: auto;
+
+    }
+
+    .psg {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: -15rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 00;
+        font-size: 20px;
+
+    }
+
+    #audioButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        top: 40%;
+        
+        margin-left: -15%;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    button {
+        display: flex;
+        color: #c305f3;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        opacity: 0.5;
+        transition: opacity 0.3s ease, background-color 0.3s;
+    }
+
+   
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       
+        position: relative;
+    }
+
+    .profile {
+        display: flex;
+        width: 100%;
+        height: auto;
+        top: -38.3rem;
+      
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        background-color: #FFA500;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 34rem;
+        z-index: 3;
+
+    }
+
+    .profile-image {
+        
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      
+        margin-right: -20px;
+        margin-bottom: 8%;
+
+    }
+
+    .profile-info h1 {
+        font-size: 32px;
+
+    }
+
+    .profile-info p {
+        margin: 30px;
+        margin-bottom: 50px;
+        color: #333333;
+        font-size: 1.2em;
+        line-height: 1.5;
+
+    }
+
+    .profile-info a {
+        text-decoration: none;
+        background-color: #FF4500;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: background-color 0.3s;
+
+    }
+
+    .profile-info a:hover {
+        background-color: #FF6347;
+
+    }
+
+    #personagens {
+        display: flex;
+        justify-content: center;
+        top: 60rem;
+        align-items: center;
+        text-align: center;
+        margin-left: 15rem;
+       
+        width: auto;
+       
+        height: auto;
+    }
+
+    .psg {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 15rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 600;
+       
+        font-size: 30px;
+        
+
+    }
+
+    .circle-wrapper {
+        justify-content: center;
+        left: 2.6rem;
+       
+        top: 61rem;
+        
+        border: 1px solid #0f3e5d;
+        position: relative;
+        border-radius: 9999px;
+        display: grid;
+        width: 310px;
+        height: 310px;
+        grid-template-areas: "stack";
+        place-content: center;
+
+    }
+
+  
+    label {
+
+        grid-area: stack;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 9999px;
+        border: 1px solid #738088;
+        display: grid;
+        place-content: center;
+        background-color: rgba(255, 255, 255, 02);
+        position: relative;
+        color: #87ceeb;
+        font-size: 1.25rem;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+
+    }
+
+   
+    .relogio {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        object-fit: cover;
+        transition: all 1s ease-in-out;
+
+    }
+
+ 
+    .avatar {
+        --radius: 9rem;
+        --d: calc(var(--i) / var(--total));
+        --r-offset: -0.15turn;
+        --r-amount: 1turn;
+        --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
+        transform: rotate(var(--r)) translate(var(--radius)) rotate(calc(-1 * var(--r)));
+
+    }
+
+    svg {
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        inset: 0 0 0 -50%;
+        margin: auto;
+        width: 7vh;
+        opacity: 0;
+        z-index: -10;
+
+    }
+
+  
+    .center-element {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 8rem;
+        height: 8rem;
+        background-color: #1b2c36;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        color: #cbd5e0;
+        font-size: 1rem;
+
+    }
+
+    
+    .center-element::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        left: -1px;
+        background-color: #0a4368;
+        border-radius: 50%;
+        z-index: -10;
+        transition: all 1s;
+
+    }
+
+   
+    input:checked+label {
+        transform: none !important;
+        transition-duration: 1s;
+
+    }
+
+   
+    input:checked+label>img {
+        transform: scale(4);
+
+    }
+
+   
+    input:checked+label>svg {
+        opacity: 1;
+        transform: scale(3.90) rotate(-10deg);
+        transition-delay: 700ms, 500ms, 2000ms;
+        z-index: 10;
+
+    } */
+
+/* Altera o Titulo Cenas*/
+/* .csn-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 25rem;
+    font-weight:500;
+    font-size: 40px;
+   
+
+}
+
+#cenas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.turma {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:137rem;
+    left: 0;
+    width: 100%;
+    height: 100vw;
+  
+    background-color: red;
+  } */
+
+/*Carrossel de Videos*/
+
+
+
+/* .carrossel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 210px;
+    overflow: hidden;
+    top: 43rem;
+    left: 65rem;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.videos {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+}
+
+.video {
+    min-width: 100%;
+    
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+
+    
+}
+
+  
+  #botao-carr, #botao-ssel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+
+
+
+
+
+
+
+
+    footer {
+        margin-top: 20rem;
+        position: relative;
+        top: 80rem; 
+        text-align: center;
+        padding: 20px;
+        background-color: #d21717;
+    }
+
+
+
+
+
+
+
+
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -901,26 +1432,21 @@ footer {
 
 
 
-hr {
+
+  .turma {
     position: relative;
-top: 18rem;
-
-}
-
-
-
-.background-image {
-    position: absolute;
-    top:137rem;
+    top:30rem;
     left: 0;
     width: 100%;
-    height: 127vh;
-    background-image: url('../img/turma_One.png');
-    background-size: cover;
+    height: auto;
+    /* background-image: url('../img/turma_One.png'); */
+    /* background-size: cover;
     background-position: center;
-    filter: blur(1px);
-    z-index: -1;
+    filter: blur(1px);*/
+    z-index: -1; 
   }
+
+
 
 /*Carrossel de Videos*/
 
@@ -993,13 +1519,22 @@ iframe {
 
 
 
-    footer {
-        position: relative;
-        top: 15rem;
-        text-align: center;
-        padding: 20px;
-        background-color: #d21717;
-    }
+  footer {
+    width: 100%;
+    height: auto;
+    position:relative;
+    top: 0;
+    text-align: center;
+    padding: 20px;
+    /* background-color: #d21717; */
+    z-index: 2;
+
+    
+
+
+}
+
+    
 
 
 
@@ -1107,7 +1642,7 @@ iframe {
             justify-content: center;
             align-items: center;
             text-align: center;
-            left: -5.1rem;
+            left: -7rem;
             width: 40%;
             height: auto;
             top: 50rem;
@@ -1171,10 +1706,10 @@ iframe {
 
         .profile {
             display: flex;
-            float: var(--d);
-            /* width: 100%; */
+            padding: 1rem;
+            
             height: auto;
-            top: 22.5rem;
+            top: 17.8rem;
             /*-40*/
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             background-color: #FFA500;
@@ -1187,9 +1722,9 @@ iframe {
         }
 
         .profile-image {
-            /* flex-direction: row; */
-            width: 100%;
-            height: 100%;
+           
+            width: 90%;
+            height: auto;
             border-radius: 50%;
             /* margin-right: 10px; */
             margin-right: -20px;
@@ -1231,12 +1766,12 @@ iframe {
 
         .circle-wrapper {
             margin-left: 2.5rem;
-            left: 2.6rem;
-            /*2.6 max-width: 100%;*/
+            left: 1.3rem;
+            
             max-height: 100%;
             flex-wrap: wrap;
             top: 53rem;
-            /*4*/
+            
             border: 1px solid #0f3e5d;
             position: relative;
             border-radius: 9999px;
@@ -1369,10 +1904,11 @@ iframe {
     justify-content: center;
     text-align: center;
     position: relative;
+   left: 7rem;
     top: 57.9rem;
     font-weight:500;
     font-size: 12px;
-    /* background-color: red; */
+    background-color: red;
 
 }
 
@@ -1381,37 +1917,21 @@ iframe {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 
 }
 
 
 
 
-hr {
+  
+.turma {
     position: relative;
-top: 18rem;
-
-}
-
-
-
-.background-image {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    top:140rem;
+    top:58.8rem;
     left: 0;
-    width: 100%;/*100%*/
-    height: 20%;/*170vw*/
-    background-image: url('../img/turma_One.png');
-    background-size: cover;
-    background-position: center;
-    filter: blur(1px);
-    z-index: -1;
+    width: 100%;
+    height: auto;
+     z-index: -1; 
   }
 
 /*Carrossel de Videos*/
@@ -1430,8 +1950,8 @@ top: 18rem;
     height: 49vw;
     max-width: 210px;/*800px*/
     overflow: hidden;
-    top: 59rem;
-    left: 14rem;/*35*/
+    top: 44rem;
+    left: 12rem;/*35*/
     border: 2px solid #333;
     border-radius: 10px;
     background-color: red;
@@ -1488,6 +2008,7 @@ iframe {
             padding: 20px;
             background-color: #d21717;
         }
+        
 
 
 
@@ -1861,7 +2382,7 @@ iframe {
     top: 60.9rem;
     font-weight:200;
     font-size: 12px;
-    /* background-color: red; */
+    background-color: red;
 
 }
 
@@ -1872,17 +2393,6 @@ iframe {
     text-align: center;
 
 }
-
-
-
-
-hr {
-    position: relative;
-top: 18rem;
-
-}
-
-
 
 .background-image {
     display: flex;
