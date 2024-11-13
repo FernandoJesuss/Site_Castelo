@@ -1857,7 +1857,7 @@ iframe {
     justify-content: center;
     text-align: center;
     position: relative;
-    top: 67rem;
+    top: 71.5rem;
     font-weight:200;
     font-size: 12px;
     /* background-color: red; */
@@ -1918,7 +1918,7 @@ top: 18rem;
     height: 52.1vw;
     max-width: 210px;/*800px*/
     overflow: hidden;
-    top: 69rem;
+    top: 73rem;
     left: 10rem;/*35*/
     border: 2px solid #333;
     border-radius: 10px;
@@ -1970,7 +1970,7 @@ iframe {
             footer {
                 width: 100%;
                 position: relative;
-                margin-top: 55rem;
+                margin-top: 59.6rem;
                 /* top: 15rem; */
                 text-align: center;
                 padding: 20px;
