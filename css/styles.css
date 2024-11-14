@@ -165,9 +165,9 @@ button:hover {
     height: auto;
     display: flex;
     position: relative;
-    top: -3.9rem;
+    top: -6.2rem;
     /* padding: 9.6%; */
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
     align-items: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     background-color: #FFA500;
@@ -1542,7 +1542,7 @@ footer {
             display: flex;
             padding: 1rem;
             height: auto;
-            top: 17.4rem;
+            top: 13.4rem;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             background-color: #FFA500;
             position: relative;
@@ -2009,7 +2009,7 @@ footer {
                 padding: 1rem;
 
                 height: auto;
-                top: 23rem;
+                top: 19rem;
 
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
                 background-color: #FFA500;
