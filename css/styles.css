@@ -1558,9 +1558,9 @@ iframe {
             height: 15vh;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             position: absolute;
-            /*relative*/
+            
             margin-top: -4%;
-            /*-4*/
+            
             z-index: 3;
         }
 
@@ -1604,7 +1604,7 @@ iframe {
 
         }
 
-        /* Estilos para quando o menu estiver aberto */
+        
         .hamburger.active .bar:nth-child(1) {
             transform: rotate(45deg) translate(5px, 5px);
             z-index: 3;
@@ -1621,7 +1621,7 @@ iframe {
         }
 
 
-        /*Altera o efeito ao passa o mouse  no video*/
+        
         #canvas {
             display: none;
             width: 100%;
@@ -1633,13 +1633,11 @@ iframe {
         video {
             width: 100%;
             height: auto;
-            /*alterei aqui ddddddddddddddddddddddddddddddddddddddddddddddddddddddd*/
-            position: absolute;
-            /*absolute*/
-            top: 8.2rem;
+                        position: absolute;
+                        top: 8.2rem;
             left: 0;
             z-index: -1;
-            /*-1*/
+            
             object-fit: cover;
             filter: brightness(60%);
 
@@ -1662,9 +1660,7 @@ iframe {
             position: relative;
             width: 100%;
             height: 100%;
-            /* margin-top: 60rem; */
-            /* top: -15rem; */
-            align-items: center;
+                        align-items: center;
             justify-content: center;
             text-align: center;
             font-weight: 600;
@@ -1679,7 +1675,7 @@ iframe {
             justify-content: center;
             align-items: center;
             top: 40%;
-            /*10%*/
+            
             margin-left: -15%;
             font-size: 15px;
             font-weight: 500;
@@ -1708,7 +1704,7 @@ iframe {
             justify-content: center;
             align-items: center;
             height: 100vh;
-            /*alterei qui*/
+            
             position: relative;
         }
 
@@ -1718,7 +1714,7 @@ iframe {
 
             height: auto;
             top: 17.8rem;
-            /*-40*/
+            
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             background-color: #FFA500;
             position: relative;
@@ -1734,7 +1730,7 @@ iframe {
             width: 90%;
             height: auto;
             border-radius: 50%;
-            /* margin-right: 10px; */
+        
             margin-right: -20px;
             margin-bottom: 8%;
 
@@ -1792,7 +1788,7 @@ iframe {
 
         }
 
-        /* Label styles inside the circle wrapper */
+        
         label {
 
             grid-area: stack;
@@ -1813,7 +1809,7 @@ iframe {
 
         }
 
-        /* Imagem styles */
+        
         .relogio {
             width: 2rem;
             height: 2rem;
@@ -1823,7 +1819,7 @@ iframe {
 
         }
 
-        /* Avatar transform styles*/
+        
         .avatar {
             --radius: 9rem;
             --d: calc(var(--i) / var(--total));
@@ -1845,7 +1841,7 @@ iframe {
 
         }
 
-        /*Centered element styles*/
+        
         .center-element {
             position: absolute;
             top: 0;
@@ -1868,7 +1864,7 @@ iframe {
 
         }
 
-        /*Before pseudo-element for center-element */
+        
         .center-element::before {
             content: "";
             position: absolute;
@@ -1883,20 +1879,20 @@ iframe {
 
         }
 
-        /*Checked radio input style */
+        
         input:checked+label {
             transform: none !important;
             transition-duration: 1s;
 
         }
 
-        /*Imagem transform on checked */
+        
         input:checked+label>img {
             transform: scale(4);
 
         }
 
-        /*svg transform on checked */
+        
         input:checked+label>svg {
             opacity: 1;
             transform: scale(3.90) rotate(-10deg);
@@ -1955,14 +1951,14 @@ iframe {
             text-align: center;
             position: relative;
             width: 100%;
-            /*80%*/
+            
             height: 49vw;
             max-width: 210px;
-            /*800px*/
+    
             overflow: hidden;
             top: 44rem;
             left: 12rem;
-            /*35*/
+            
             border: 2px solid #333;
             border-radius: 10px;
             background-color: red;
@@ -2015,7 +2011,7 @@ iframe {
         footer {
             position: relative;
             margin-top: 45.2rem;
-            /* top: 15rem; */
+        
             text-align: center;
             padding: 20px;
             background-color: #d21717;
@@ -2035,9 +2031,9 @@ iframe {
                 height: 15vh;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
                 position: absolute;
-                /*relative*/
+                
                 margin-top: -4%;
-                /*-4*/
+                
                 z-index: 3;
             }
 
@@ -2055,7 +2051,7 @@ iframe {
                 display: flex;
                 position: absolute;
                 top: 20%;
-                /*-50*/
+                
                 margin-left: 3%;
             }
 
@@ -2081,7 +2077,7 @@ iframe {
 
             }
 
-            /* Estilos para quando o menu estiver aberto */
+            
             .hamburger.active .bar:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px);
                 z-index: 3;
@@ -2116,7 +2112,7 @@ iframe {
                 top: 5.9rem;
                 left: 0;
                 z-index: -1;
-                /*-1*/
+                
                 object-fit: cover;
                 filter: brightness(60%);
 
@@ -2139,8 +2135,7 @@ iframe {
                 position: relative;
                 width: 100%;
                 height: 100%;
-                /* margin-top: 60rem; */
-                /* top: -15rem; */
+               
                 align-items: center;
                 justify-content: center;
                 text-align: center;
@@ -2156,7 +2151,7 @@ iframe {
                 justify-content: center;
                 align-items: center;
                 top: 40%;
-                /*10%*/
+                
                 margin-left: -15%;
                 font-size: 15px;
                 font-weight: 500;
@@ -2185,7 +2180,7 @@ iframe {
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-                /*alterei qui*/
+                
                 position: relative;
             }
 
@@ -2194,7 +2189,7 @@ iframe {
                 padding: 1rem;
 
                 height: auto;
-                top: 23.3rem;
+                top: 23rem;
                 
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
                 background-color: #FFA500;
@@ -2211,7 +2206,7 @@ iframe {
                 width: 70%;
                 height: auto;
                 border-radius: 50%;
-                /* margin-right: 10px; */
+                
                 margin-right: -20px;
                 margin-bottom: 8%;
 
@@ -2269,7 +2264,7 @@ iframe {
 
             }
 
-            /* Label styles inside the circle wrapper */
+            
             label {
 
                 grid-area: stack;
@@ -2290,7 +2285,7 @@ iframe {
 
             }
 
-            /* Imagem styles */
+            
             .relogio {
                 width: 2rem;
                 height: 2rem;
@@ -2300,7 +2295,7 @@ iframe {
 
             }
 
-            /* Avatar transform styles*/
+        
             .avatar {
                 --radius: 9rem;
                 --d: calc(var(--i) / var(--total));
@@ -2322,7 +2317,7 @@ iframe {
 
             }
 
-            /*Centered element styles*/
+            
             .center-element {
                 position: absolute;
                 top: 0;
@@ -2345,7 +2340,7 @@ iframe {
 
             }
 
-            /*Before pseudo-element for center-element */
+            
             .center-element::before {
                 content: "";
                 position: absolute;
@@ -2360,20 +2355,20 @@ iframe {
 
             }
 
-            /*Checked radio input style */
+            
             input:checked+label {
                 transform: none !important;
                 transition-duration: 1s;
 
             }
 
-            /*Imagem transform on checked */
+            
             input:checked+label>img {
                 transform: scale(4);
 
             }
 
-            /*svg transform on checked */
+            
             input:checked+label>svg {
                 opacity: 1;
                 transform: scale(3.90) rotate(-10deg);
@@ -2382,7 +2377,7 @@ iframe {
 
             }
 
-            /* Altera o Titulo Cenas*/
+            
             .csn-one {
                 display: flex;
                 align-items: center;
@@ -2435,11 +2430,11 @@ iframe {
                 
                 height: 49vw;
                 max-width: 210px;
-                /*800px*/
+                
                 overflow: hidden;
                 top: 52rem;
                 left: 10.9rem;
-                /*35*/
+                
                 border: 2px solid #333;
                 border-radius: 10px;
                 background-color: red;
