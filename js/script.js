@@ -32,12 +32,6 @@ document.querySelectorAll('input[type="radio"]').forEach((radio) => {
       setTimeout(() => (radio.checked = !radio.checked), 0);
     });
   });
-  
-
-
-
-
-
 
 //Carrosel Videos
 
@@ -77,10 +71,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+//CopyRight
+const year = document.querySelector(".year");
+  year.innerHTML = new Date().getFullYear();
 
 
 
-  
+
+
+
+
+
+
 
 /*
 const menuToggle = document.getElementById('menuToggle');

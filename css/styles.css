@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 *,
 ::before,
 ::after {
-    font-family: "Poppins", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,7 +32,6 @@ body {
 video {
     width: 100%;
     height: auto;
-    /*alterei aqui*/
     position: absolute;
     top: 0;
     left: 0;
@@ -62,7 +61,6 @@ header {
     height: 9vh;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-
 
 }
 
@@ -112,8 +110,6 @@ main {
     position: relative;
     z-index: 2;
 
-
-
 }
 
 /*Alterar o Botão Audio*/
@@ -156,7 +152,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: auto;
-    /* overflow: hidden; */
 
 }
 
@@ -166,8 +161,6 @@ button:hover {
     display: flex;
     position: relative;
     top: -6.2rem;
-    /* padding: 9.6%; */
-    /* margin-bottom: 120px; */
     align-items: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     background-color: #FFA500;
@@ -229,9 +222,6 @@ button:hover {
     font-size: 60px;
     position: relative;
     margin-top: -3rem;
-    /* top: -2rem; */
-    /* background-color: red; */
-
 
 }
 
@@ -397,7 +387,7 @@ svg {
     top: 25rem;
     font-weight: 500;
     font-size: 40px;
-    /* background-color: red; */
+
 
 }
 
@@ -409,30 +399,16 @@ svg {
 
 }
 
-
-
-
-
-
-
-
 .turma {
     position: relative;
     top: 30rem;
     left: 0;
     width: 100%;
     height: auto;
-    /* background-image: url('../img/turma_One.png'); */
-    /* background-size: cover;
-    background-position: center;
-    filter: blur(1px);*/
     z-index: -1;
 }
 
 /*Carrossel de Videos*/
-
-
-
 .carrossel {
     display: flex;
     align-items: center;
@@ -440,13 +416,10 @@ svg {
     text-align: center;
     position: relative;
     width: 100%;
-    /*80%*/
     max-width: 700px;
-    /*800px*/
     overflow: hidden;
     top: -10rem;
     left: 55rem;
-    /*35*/
     border: 2px solid #333;
     border-radius: 10px;
     background-color: red;
@@ -468,9 +441,7 @@ iframe {
     height: 450px;
     border: none;
 
-
 }
-
 
 #botao-carr,
 #botao-ssel {
@@ -485,7 +456,6 @@ iframe {
     border-radius: 5px;
 }
 
-
 .prev {
     left: 10px;
 }
@@ -494,23 +464,7 @@ iframe {
     right: 10px;
 }
 
-
-
-
-
-
-
-
 /* Posicionamento e estilo para parágrafo */
-/* p- {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    color: white;
-    font-size: 0.8rem;
-
-} */
-
 footer {
     width: 100%;
     height: auto;
@@ -518,28 +472,19 @@ footer {
     top: 0;
     text-align: center;
     padding: 20px;
-    /* background-color: #d21717; */
     z-index: 2;
-
-
-
 
 }
 
 /* Final do site desktop ========================================================*/
 
 @media screen and (max-width: 1600px) {
-
-
-
-
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: auto;
-
         position: relative;
     }
 
@@ -553,18 +498,12 @@ footer {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         background-color: #FFA500;
 
-
-
-
     }
 
     .profile-image {
-
         width: 25%;
         height: 25%;
         border-radius: 50%;
-
-
 
     }
 
@@ -605,9 +544,6 @@ footer {
         top: -7rem;
         left: 5rem;
 
-
-
-
     }
 
     .psg {
@@ -621,7 +557,6 @@ footer {
         text-align: center;
         font-weight: 700;
         font-size: 50px;
-
 
     }
 
@@ -640,9 +575,7 @@ footer {
 
     }
 
-
     label {
-
         grid-area: stack;
         width: 2rem;
         height: 2rem;
@@ -661,7 +594,6 @@ footer {
 
     }
 
-
     .relogio {
         width: 4rem;
         height: 4rem;
@@ -670,7 +602,6 @@ footer {
         transition: all 1s ease-in-out;
 
     }
-
 
     .avatar {
         --radius: 19rem;
@@ -692,7 +623,6 @@ footer {
         z-index: -10;
 
     }
-
 
     .center-element {
         position: absolute;
@@ -716,7 +646,6 @@ footer {
 
     }
 
-
     .center-element::before {
         content: "";
         position: absolute;
@@ -731,19 +660,16 @@ footer {
 
     }
 
-
     input:checked+label {
         transform: none !important;
         transition-duration: 1s;
 
     }
 
-
     input:checked+label>img {
         transform: scale(4);
 
     }
-
 
     input:checked+label>svg {
         opacity: 1;
@@ -752,7 +678,6 @@ footer {
         z-index: 10;
 
     }
-
 
     .csn-one {
         display: flex;
@@ -764,7 +689,6 @@ footer {
         font-weight: 500;
         font-size: 40px;
 
-
     }
 
     #cenas {
@@ -772,7 +696,6 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
-
     }
 
     .turma {
@@ -784,16 +707,10 @@ footer {
         width: 100%;
         height: auto;
 
-        /* background-color: red; */
     }
 
-
-
-
     .carrossel {
-
         gap: 20px;
-
         position: relative;
         width: 100%;
         max-width: 600px;
@@ -821,9 +738,7 @@ footer {
         height: 450px;
         border: none;
 
-
     }
-
 
     #botao-carr,
     #botao-ssel {
@@ -838,7 +753,6 @@ footer {
         border-radius: 5px;
     }
 
-
     .prev {
         left: 10px;
     }
@@ -849,36 +763,15 @@ footer {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*@media 768px*/
 @media screen and (max-width: 768px) {
-
     header {
         display: flexbox;
         background-color: #f5f070;
         width: 100%;
         height: 15vh;
-        /*15vh*/
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         position: absolute;
-        /*relative*/
         margin-top: -4%;
         z-index: 23;
     }
@@ -897,7 +790,6 @@ footer {
         display: flex;
         position: absolute;
         top: 20%;
-        /*-50*/
         margin-left: 3%;
     }
 
@@ -939,16 +831,12 @@ footer {
         z-index: 3;
     }
 
-
     video {
         width: 100%;
         height: auto;
-        /*alterei aqui ddddddddddddddddddddddddddddddddddddddddddddddddddddddd*/
         position: absolute;
-        /*top: 7rem;7.9*/
         left: 0;
         z-index: -1;
-        /*-1*/
         object-fit: cover;
         filter: brightness(60%);
         margin-top: -0.6rem;
@@ -986,7 +874,6 @@ footer {
         justify-content: center;
         align-items: center;
         top: 40%;
-        /*10%*/
         margin-left: -15%;
         font-size: 15px;
         font-weight: 500;
@@ -1024,7 +911,6 @@ footer {
         width: 100%;
         height: auto;
         top: -38.3rem;
-        /*-40*/
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         background-color: #FFA500;
         position: absolute;
@@ -1037,11 +923,9 @@ footer {
     }
 
     .profile-image {
-        /* flex-direction: row; */
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        /* margin-right: 10px; */
         margin-right: -20px;
         margin-bottom: 8%;
 
@@ -1085,9 +969,7 @@ footer {
         align-items: center;
         text-align: center;
         margin-left: 15rem;
-        /* left: -7rem;*/
         width: auto;
-        /* width: 40%;*/
         height: auto;
     }
 
@@ -1101,21 +983,14 @@ footer {
         justify-content: center;
         text-align: center;
         font-weight: 600;
-        /* background-color: red; */
         font-size: 30px;
-        /*20*/
 
     }
 
     .circle-wrapper {
         justify-content: center;
         left: 2.6rem;
-        /*2.6 max-width: 100%;
-        max-height: 100%;
-        flex-wrap: wrap;
-        justify-content: center;*/
         top: 61rem;
-        /*4*/
         border: 1px solid #0f3e5d;
         position: relative;
         border-radius: 9999px;
@@ -1127,9 +1002,7 @@ footer {
 
     }
 
-    /* Label styles inside the circle wrapper */
     label {
-
         grid-area: stack;
         width: 2rem;
         height: 2rem;
@@ -1180,7 +1053,6 @@ footer {
 
     }
 
-    /*Centered element styles*/
     .center-element {
         position: absolute;
         top: 0;
@@ -1203,7 +1075,6 @@ footer {
 
     }
 
-    /*Before pseudo-element for center-element */
     .center-element::before {
         content: "";
         position: absolute;
@@ -1218,20 +1089,17 @@ footer {
 
     }
 
-    /*Checked radio input style */
     input:checked+label {
         transform: none !important;
         transition-duration: 1s;
 
     }
 
-    /*Imagem transform on checked */
     input:checked+label>img {
         transform: scale(4);
 
     }
 
-    /*svg transform on checked */
     input:checked+label>svg {
         opacity: 1;
         transform: scale(3.90) rotate(-10deg);
@@ -1240,7 +1108,6 @@ footer {
 
     }
 
-    /* Altera o Titulo Cenas*/
     .csn-one {
         display: flex;
         align-items: center;
@@ -1250,7 +1117,6 @@ footer {
         top: 25rem;
         font-weight: 500;
         font-size: 40px;
-        /* background-color: red; */
 
     }
 
@@ -1262,29 +1128,16 @@ footer {
 
     }
 
-
-
-
-
     .turma {
         position: relative;
         top: 30rem;
         left: 0;
         width: 100%;
         height: auto;
-        /* background-image: url('../img/turma_One.png'); */
-        /* background-size: cover;
-    background-position: center;
-    filter: blur(1px);*/
         z-index: -1;
     }
 
-
-
     /*Carrossel de Videos*/
-
-
-
     .carrossel {
         display: flex;
         flex-wrap: wrap;
@@ -1294,13 +1147,10 @@ footer {
         text-align: center;
         position: relative;
         width: 100%;
-        /*80%*/
         max-width: 210px;
-        /*800px*/
         overflow: hidden;
         top: 43rem;
         left: 65rem;
-        /*35*/
         border: 2px solid #333;
         border-radius: 10px;
         background-color: red;
@@ -1322,9 +1172,7 @@ footer {
         height: 450px;
         border: none;
 
-
     }
-
 
     #botao-carr,
     #botao-ssel {
@@ -1339,7 +1187,6 @@ footer {
         border-radius: 5px;
     }
 
-
     .prev {
         left: 10px;
     }
@@ -1348,14 +1195,6 @@ footer {
         right: 10px;
     }
 
-
-
-
-
-
-
-
-
     footer {
         width: 100%;
         height: auto;
@@ -1363,23 +1202,12 @@ footer {
         top: 0;
         text-align: center;
         padding: 20px;
-        /* background-color: #d21717; */
         z-index: 2;
-
-
-
 
     }
 
-
-
-
-
-
     /* Estilos específicos para smartphones */
     @media (max-width: 480px) {
-
-
         header {
             display: flexbox;
             background-color: #f5f070;
@@ -1387,9 +1215,7 @@ footer {
             height: 15vh;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             position: absolute;
-
             margin-top: -4%;
-
             z-index: 3;
         }
 
@@ -1407,7 +1233,6 @@ footer {
             display: flex;
             position: absolute;
             top: 20%;
-            /*-50*/
             margin-left: 3%;
         }
 
@@ -1419,7 +1244,6 @@ footer {
             width: 100%;
             top: 15vh;
             left: 0;
-            /* z-index: 2; */
 
         }
 
@@ -1432,7 +1256,6 @@ footer {
             margin: 10px 0;
 
         }
-
 
         .hamburger.active .bar:nth-child(1) {
             transform: rotate(45deg) translate(5px, 5px);
@@ -1449,15 +1272,12 @@ footer {
             z-index: 3;
         }
 
-
-
         #canvas {
             display: none;
             width: 100%;
             height: 100%;
             cursor: pointer;
         }
-
 
         video {
             width: 100%;
@@ -1466,7 +1286,6 @@ footer {
             top: 8.2rem;
             left: 0;
             z-index: -1;
-
             object-fit: cover;
             filter: brightness(60%);
 
@@ -1495,7 +1314,6 @@ footer {
             text-align: center;
             font-weight: 600;
             font-size: 20px;
-            /* background-color: red; */
 
         }
 
@@ -1505,7 +1323,6 @@ footer {
             justify-content: center;
             align-items: center;
             top: 40%;
-
             margin-left: -15%;
             font-size: 15px;
             font-weight: 500;
@@ -1534,7 +1351,6 @@ footer {
             justify-content: center;
             align-items: center;
             height: 100vh;
-
             position: relative;
         }
 
@@ -1550,11 +1366,9 @@ footer {
             justify-content: center;
             align-items: center;
 
-
         }
 
         .profile-image {
-
             width: 90%;
             height: auto;
             border-radius: 50%;
@@ -1594,7 +1408,6 @@ footer {
 
         }
 
-
         .circle-wrapper {
             left: 5.1rem;
             top: 43rem;
@@ -1606,13 +1419,10 @@ footer {
             height: 310px;
             grid-template-areas: "stack";
             place-content: center;
-            /* background-color: red; */
 
         }
 
-
         label {
-
             grid-area: stack;
             width: 2rem;
             height: 2rem;
@@ -1640,7 +1450,6 @@ footer {
             transition: all 1s ease-in-out;
 
         }
-
 
         .avatar {
             --radius: 9rem;
@@ -1686,7 +1495,6 @@ footer {
 
         }
 
-
         .center-element::before {
             content: "";
             position: absolute;
@@ -1701,19 +1509,16 @@ footer {
 
         }
 
-
         input:checked+label {
             transform: none !important;
             transition-duration: 1s;
 
         }
 
-
         input:checked+label>img {
             transform: scale(4);
 
         }
-
 
         input:checked+label>svg {
             opacity: 1;
@@ -1734,7 +1539,6 @@ footer {
             top: 49.9rem;
             font-weight: 500;
             font-size: 12px;
-            /* background-color: red; */
 
         }
 
@@ -1744,12 +1548,7 @@ footer {
             align-items: center;
             text-align: center;
 
-
         }
-
-
-
-
 
         .turma {
             position: relative;
@@ -1761,9 +1560,6 @@ footer {
         }
 
         /*Carrossel de Videos*/
-
-
-
         .carrossel {
             display: flex;
             flex-wrap: wrap;
@@ -1799,9 +1595,7 @@ footer {
             height: 250px;
             border: none;
 
-
         }
-
 
         #botao-carr,
         #botao-ssel {
@@ -1825,8 +1619,6 @@ footer {
             right: 10px;
         }
 
-
-
         footer {
             position: relative;
             margin-top: 36.2rem;
@@ -1836,14 +1628,8 @@ footer {
             background-color: #d21717;
         }
 
-
-
-
-
         /* @media (max-width: 400px)  */
         @media (max-width: 400px) {
-
-
             header {
                 display: flexbox;
                 background-color: #f5f070;
@@ -1851,9 +1637,7 @@ footer {
                 height: 15vh;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
                 position: absolute;
-
                 margin-top: -4%;
-
                 z-index: 3;
             }
 
@@ -1871,7 +1655,6 @@ footer {
                 display: flex;
                 position: absolute;
                 top: 20%;
-
                 margin-left: 3%;
             }
 
@@ -1883,7 +1666,6 @@ footer {
                 width: 100%;
                 top: 15vh;
                 left: 0;
-                /* z-index: 2; */
 
             }
 
@@ -1913,7 +1695,6 @@ footer {
                 z-index: 3;
             }
 
-
             /*Altera o efeito ao passa o mouse  no video*/
             #canvas {
                 display: none;
@@ -1922,17 +1703,13 @@ footer {
                 cursor: pointer;
             }
 
-
             video {
                 width: 100%;
                 height: auto;
-
                 position: absolute;
-
                 top: 5.9rem;
                 left: 0;
                 z-index: -1;
-
                 object-fit: cover;
                 filter: brightness(60%);
 
@@ -1955,14 +1732,12 @@ footer {
                 position: relative;
                 width: 100%;
                 height: 100%;
-
                 align-items: center;
                 justify-content: center;
                 text-align: center;
                 font-weight: 600;
                 font-size: 20px;
-                /* background-color: red; */
-
+                
             }
 
             #audioButton {
@@ -1971,7 +1746,6 @@ footer {
                 justify-content: center;
                 align-items: center;
                 top: 40%;
-
                 margin-left: -15%;
                 font-size: 15px;
                 font-weight: 500;
@@ -2000,17 +1774,14 @@ footer {
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-
                 position: relative;
             }
 
             .profile {
                 display: flex;
                 padding: 1rem;
-
                 height: auto;
                 top: 19rem;
-
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
                 background-color: #FFA500;
                 position: relative;
@@ -2018,15 +1789,12 @@ footer {
                 justify-content: center;
                 align-items: center;
 
-
             }
 
             .profile-image {
-
                 width: 70%;
                 height: auto;
                 border-radius: 50%;
-
                 margin-right: -20px;
                 margin-bottom: 8%;
 
@@ -2063,7 +1831,6 @@ footer {
 
             }
 
-
             .circle-wrapper {
                 margin-left: 2.5rem;
                 left: 0.3rem;
@@ -2077,12 +1844,9 @@ footer {
                 grid-template-areas: "stack";
                 place-content: center;
 
-
             }
 
-
             label {
-
                 grid-area: stack;
                 width: 2rem;
                 height: 2rem;
@@ -2101,7 +1865,6 @@ footer {
 
             }
 
-
             .relogio {
                 width: 2rem;
                 height: 2rem;
@@ -2110,7 +1873,6 @@ footer {
                 transition: all 1s ease-in-out;
 
             }
-
 
             .avatar {
                 --radius: 9rem;
@@ -2132,7 +1894,6 @@ footer {
                 z-index: -10;
 
             }
-
 
             .center-element {
                 position: absolute;
@@ -2156,7 +1917,6 @@ footer {
 
             }
 
-
             .center-element::before {
                 content: "";
                 position: absolute;
@@ -2178,12 +1938,10 @@ footer {
 
             }
 
-
             input:checked+label>img {
                 transform: scale(4);
 
             }
-
 
             input:checked+label>svg {
                 opacity: 1;
@@ -2192,7 +1950,6 @@ footer {
                 z-index: 10;
 
             }
-
 
             .csn-one {
                 display: flex;
@@ -2204,8 +1961,7 @@ footer {
                 top: 64.9rem;
                 font-weight: 500;
                 font-size: 12px;
-                /* background-color: red; */
-
+              
             }
 
             #cenas {
@@ -2214,12 +1970,7 @@ footer {
                 align-items: center;
                 text-align: center;
 
-
             }
-
-
-
-
 
             .turma {
                 position: relative;
@@ -2231,9 +1982,6 @@ footer {
             }
 
             /*Carrossel de Videos*/
-
-
-
             .carrossel {
                 display: flex;
                 flex-wrap: wrap;
@@ -2243,14 +1991,11 @@ footer {
                 text-align: center;
                 position: relative;
                 width: 80%;
-
                 height: 49vw;
                 max-width: 210px;
-
                 overflow: hidden;
                 top: 52rem;
                 left: 10.9rem;
-
                 border: 2px solid #333;
                 border-radius: 10px;
                 background-color: red;
@@ -2272,9 +2017,7 @@ footer {
                 height: 250px;
                 border: none;
 
-
             }
-
 
             #botao-carr,
             #botao-ssel {
@@ -2297,8 +2040,6 @@ footer {
             .next {
                 right: 10px;
             }
-
-
 
             footer {
                 position: relative;
