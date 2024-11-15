@@ -1304,7 +1304,7 @@ footer {
             left: -6rem;
             width: 40%;
             height: auto;
-            top: 37rem;
+            top: 22rem;
             margin-top: 50px;
 
         }
@@ -1318,7 +1318,7 @@ footer {
             justify-content: center;
             text-align: center;
             font-weight: 600;
-            font-size: 20px;
+            font-size: 50px;
 
         }
 
@@ -1361,9 +1361,10 @@ footer {
 
         .profile {
             display: flex;
-            padding: 1rem;
+            /* padding: 1rem; */
             height: auto;
-            top: 13.4rem;
+            top: 6rem;
+            /* font-size: 15px; */
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             background-color: #FFA500;
             position: relative;
@@ -1383,7 +1384,8 @@ footer {
         }
 
         .profile-info h1 {
-            font-size: 32px;
+            font-size: 35px;
+            font-weight: 500;
 
         }
 
@@ -1391,7 +1393,7 @@ footer {
             margin: 30px;
             margin-bottom: 50px;
             color: #333333;
-            font-size: 1.2em;
+            font-size: 15px;
             line-height: 1.5;
 
         }
@@ -1415,7 +1417,7 @@ footer {
 
         .circle-wrapper {
             left: 5.1rem;
-            top: 43rem;
+            top: 27rem;
             border: 1px solid #0f3e5d;
             position: relative;
             border-radius: 9999px;
@@ -1541,9 +1543,9 @@ footer {
             text-align: center;
             position: relative;
             left: 7rem;
-            top: 49.9rem;
+            top: 35rem;
             font-weight: 500;
-            font-size: 12px;
+            font-size: 35px;
 
         }
 
@@ -1557,7 +1559,7 @@ footer {
 
         .turma {
             position: relative;
-            top: 51.8rem;
+            top: 35.8rem;
             left: 0;
             width: 100%;
             height: auto;
@@ -1577,7 +1579,7 @@ footer {
             height: 49vw;
             max-width: 210px;
             overflow: hidden;
-            top: 35rem;
+            top: 18rem;
             left: 14.9rem;
             border: 2px solid #333;
             border-radius: 10px;
@@ -1626,8 +1628,7 @@ footer {
 
         footer {
             position: relative;
-            margin-top: 36.2rem;
-
+            margin-top: 21rem;
             text-align: center;
             padding: 20px;
             background-color: #d21717;
@@ -1728,7 +1729,7 @@ footer {
                 left: -7rem;
                 width: 40%;
                 height: auto;
-                top: 53rem;
+                top: 50rem;
 
             }
 
@@ -1740,8 +1741,8 @@ footer {
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                font-weight: 600;
-                font-size: 20px;
+                font-weight: 500;
+                font-size: 50px;
 
             }
 
@@ -1784,9 +1785,9 @@ footer {
 
             .profile {
                 display: flex;
-                padding: 1rem;
+                /* padding: 1rem; */
                 height: auto;
-                top: 19rem;
+                top: 17rem;
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
                 background-color: #FFA500;
                 position: relative;
@@ -1806,7 +1807,7 @@ footer {
             }
 
             .profile-info h1 {
-                font-size: 32px;
+                font-size: 40px;
 
             }
 
@@ -1814,7 +1815,7 @@ footer {
                 margin: 30px;
                 margin-bottom: 50px;
                 color: #333333;
-                font-size: 1.2em;
+                font-size: 20px;
                 line-height: 1.5;
 
             }
@@ -1839,7 +1840,7 @@ footer {
             .circle-wrapper {
                 margin-left: 2.5rem;
                 left: 0.3rem;
-                top: 57rem;
+                top: 54rem;
                 border: 1px solid #0f3e5d;
                 position: relative;
                 border-radius: 9999px;
@@ -1963,9 +1964,9 @@ footer {
                 text-align: center;
                 position: relative;
                 left: 7rem;
-                top: 64.9rem;
+                top: 61.9rem;
                 font-weight: 500;
-                font-size: 12px;
+                font-size: 30px;
 
             }
 
@@ -1979,7 +1980,7 @@ footer {
 
             .turma {
                 position: relative;
-                top: 65.8rem;
+                top: 62.8rem;
                 left: 0;
                 width: 100%;
                 height: auto;
@@ -1999,7 +2000,7 @@ footer {
                 height: 49vw;
                 max-width: 210px;
                 overflow: hidden;
-                top: 52rem;
+                top: 49rem;
                 left: 10.9rem;
                 border: 2px solid #333;
                 border-radius: 10px;
@@ -2048,7 +2049,7 @@ footer {
 
             footer {
                 position: relative;
-                margin-top: 53.2rem;
+                margin-top: 50.5rem;
                 text-align: center;
                 padding: 20px;
                 background-color: #d21717;
