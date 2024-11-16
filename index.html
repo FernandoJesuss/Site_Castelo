@@ -26,21 +26,23 @@
 
     </nav>
 
-    <button id="audioButton">
-      <span class="icon">🔊</span>
-      <span class="texto"></span>
-    </button>
-
   </header>
 
+  <div class="video-background">
+    <video id="background-video" autoplay loop>
+      <source src="./video/Abertura Castelo.mp4" type="video/mp4">
+    </video>
+    <div class="content-overlay">
+      
+      <button id="audio-toggle" class="audio-btn">
+        <i class="fas fa-volume-up">🔊</i>
+      </button>
 
-  <video id="backgroundVideo" autoplay loop muted>
-    <source src="./video/Abertura Castelo.mp4" type="video/mp4">
+      <canvas id="canvas"></canvas>
 
-  </video>
-
-  <canvas id="canvas"></canvas>
-
+    </div>
+  </div>
+  
   <main>
 
     <div class="container">

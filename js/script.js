@@ -1,16 +1,18 @@
 //Ativar ou Desativar o áudio
+const videoElement = document.getElementById('background-video');
+const audioToggleBtn = document.getElementById('audio-toggle');
+let audioEnabled = false;
 
-document.getElementById("audioButton").onclick = function() {
-    var video = document.getElementById("backgroundVideo");
-    video.muted = !video.muted;
-
-    var texto = this.querySelector(".texto");
-    texto.classList.toggle("hidden"); // Alterna a visibilidade do texto
-
-    // Altera o ícone conforme o estado do áudio
-    var icon = this.querySelector(".icon");
-    icon.textContent = video.muted ? "🔇" : "🔊"; // Atualiza o ícone
-};
+audioToggleBtn.addEventListener('click', () => {
+  if (audioEnabled) {
+    videoElement.muted = true;
+    audioToggleBtn.innerHTML = '<i class="fas fa-volume-up">🔇</i>';
+  } else {
+    videoElement.muted = false;
+    audioToggleBtn.innerHTML = '<i class="fas fa-volume-mute">🔊</i>';
+  }
+  audioEnabled = !audioEnabled;
+});
 
 //Menu Hambuger
 
@@ -84,13 +86,7 @@ const year = document.querySelector(".year");
 
 
 
-/*
-const menuToggle = document.getElementById('menuToggle');
-const navbar = document.getElementById('navbar');
 
-menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('nav-hidden');
-});*/
 
 
 

@@ -29,16 +29,59 @@ body {
     cursor: pointer;
 }
 
-video {
+
+
+.video-background {
+    position: relative;
     width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
     height: auto;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: -1;
     object-fit: cover;
     filter: brightness(60%);
 
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+/*Alterar o Botão Audio*/
+.audio-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    border: none;
+    color: #333;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, background-color 0.3s;
+
+}
+
+.audio-btn:hover {
+    background-color: #f1fcb9;
 }
 
 .logo {
@@ -112,38 +155,7 @@ main {
 
 }
 
-/*Alterar o Botão Audio*/
-#audioButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    top: -20%;
-    font-size: 15px;
-    font-weight: 500;
-    position: relative;
-    left: 96%;
-    border-radius: 10px;
-    z-index: 2;
-}
 
-button {
-    display: flex;
-    color: #c305f3;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    opacity: 0.5;
-    transition: opacity 0.3s ease, background-color 0.3s;
-}
-
-button:hover {
-    background-color: #f1fcb9;
-}
 
 /* Altera o quadro Sobre*/
 .container {
@@ -836,7 +848,7 @@ footer {
         z-index: 3;
     }
 
-    video {
+    /* video {
         width: 100%;
         height: auto;
         position: absolute;
@@ -846,7 +858,7 @@ footer {
         filter: brightness(60%);
         margin-top: -0.6rem;
 
-    }
+    } */
 
     #personagens {
         display: flex;
@@ -873,7 +885,70 @@ footer {
 
     }
 
-    #audioButton {
+
+    .video-background {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .video-background video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        object-fit: cover;
+        filter: brightness(60%);
+    
+    }
+    
+    .content-overlay {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        
+    }
+    
+    /*Alterar o Botão Audio*/
+    .audio-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        /* background-color: rgba(255, 255, 255, 0.5); */
+        border: none;
+        color: #333;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #007bff;
+        opacity: 0.5;
+        transition: opacity 0.3s ease, background-color 0.3s;
+    
+    }
+    
+    .audio-btn:hover {
+        background-color: #f1fcb9;
+    }
+
+
+
+
+
+
+
+
+
+    /* #audioButton {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -899,7 +974,7 @@ footer {
         outline: none;
         opacity: 0.5;
         transition: opacity 0.3s ease, background-color 0.3s;
-    }
+    } */
 
     /*Altera o Sobre*/
     .container {
@@ -2056,3 +2131,5 @@ footer {
         }
     }
 }
+
+/*1532 quebra*/
