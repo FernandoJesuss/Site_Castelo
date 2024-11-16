@@ -516,6 +516,7 @@ footer {
         max-height: 100%;
         width: 50%;
         height: 50%;
+        left: 12rem;
         margin-top: 23px;
 
     }
@@ -577,7 +578,7 @@ footer {
         max-height: 100%;
         width: 100%;
         height: 100%;
-               position: relative;
+        position: relative;
     }
 
     .profile {
@@ -778,22 +779,29 @@ footer {
     }
 
     .csn-one {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
         position: relative;
-        top: 25rem;
-        font-weight: 500;
-        font-size: 40px;
+        justify-content: center;
+        top: 10rem;
+        left: 11.5rem;
+
+
+
 
     }
 
     #cenas {
         display: flex;
-        justify-content: center;
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        top: 15rem;
         align-items: center;
+        justify-content: center;
         text-align: center;
+        font-weight: 700;
+        font-size: 50px;
     }
 
     .turma {
@@ -808,13 +816,15 @@ footer {
     }
 
     .carrossel {
+       
         gap: 20px;
         position: relative;
         width: 100%;
-        max-width: 600px;
+      
+        max-width: 400px;
         overflow: hidden;
-        top: -10rem;
-        left: 45rem;
+        top: -1rem;
+        left: 20rem;
         border: 2px solid #333;
         border-radius: 10px;
         background-color: red;
