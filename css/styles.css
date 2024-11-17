@@ -2038,7 +2038,7 @@ footer {
                 margin: 20px;
                 margin-bottom: 50px;
                 color: #333333;
-                font-size: 15px;
+                font-size: 14px;
                 line-height: 1.5;
     
             }
@@ -2052,7 +2052,7 @@ footer {
                 border: none;
                 border-radius: 20px;
                 cursor: pointer;
-                font-size: 1.2em;
+                font-size: 1em;
                 transition: background-color 0.3s;
     
             }
@@ -2231,7 +2231,7 @@ footer {
             max-width: 210px;
             overflow: hidden;
             top: -9rem;
-            left: 10.9rem;
+            left: 9.9rem;
             border: 2px solid #333;
             border-radius: 10px;
             background-color: red;
