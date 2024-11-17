@@ -1857,21 +1857,25 @@ footer {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                width: 40%;
+                width: 100%;
                 height: auto;
-                top: -3rem;
+                top: -12rem;
+                left: -15rem;
+                font-weight: 700;
+                font-size: 60px;
             }
 
             .psg {
                 display: flex;
                 position: relative;
-                width: 100%;
+                width: auto;
                 height: auto;
+
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                font-weight: 500;
-                font-size: 50px;
+
+                /* background-color: red; */
             }
 
             .content-overlay {
@@ -1925,30 +1929,18 @@ footer {
             }
 
             .profile-image {
-                width: 70%;
+                width: 100%;
                 height: auto;
                 border-radius: 50%;
-                margin-top: 3rem;
+                /* margin-top: 3rem; */
                 margin-bottom: 8%;
             }
 
             .profile-info h1 {
-                /* position: relative;
-                top: -2rem;
-                font-size: 35px;
-                font-weight: 500; */
                 font-size: 32px;
             }
 
             .profile-info p {
-                /* position: relative;
-                top: -2rem;
-                margin: 20px;
-                margin-bottom: 50px;
-                color: #333333;
-                font-size: 14px;
-                line-height: 1.5; */
-
                 margin: 30px;
                 margin-bottom: 50px;
                 color: #333333;
@@ -1957,18 +1949,6 @@ footer {
             }
 
             .profile-info a {
-                /* text-decoration: none;
-                position: relative;
-                top: -4rem;
-                background-color: #FF4500;
-                color: #FFFFFF;
-                border: none;
-                border-radius: 20px;
-                cursor: pointer;
-                font-size: 1em;
-                transition: background-color 0.3s; */
-
-
                 text-decoration: none;
                 background-color: #FF4500;
                 color: #FFFFFF;
@@ -1977,7 +1957,7 @@ footer {
                 cursor: pointer;
                 font-size: 1.2em;
                 transition: background-color 0.3s;
-        
+
             }
 
             .profile-info a:hover {
@@ -1986,22 +1966,22 @@ footer {
 
             .circle-wrapper {
                 margin-left: 2.5rem;
-                left: 0.3rem;
-                top: -1rem;
+                left: -0.55rem;
+                top: -3.5rem;
                 border: 1px solid #0f3e5d;
                 position: relative;
                 border-radius: 9999px;
                 display: grid;
-                width: 310px;
-                height: 310px;
+                width: 330px;
+                height: 330px;
                 grid-template-areas: "stack";
                 place-content: center;
             }
 
             label {
                 grid-area: stack;
-                width: 2rem;
-                height: 2rem;
+                width: 2.5rem;
+                height: 2.5rem;
                 border-radius: 9999px;
                 border: 1px solid #738088;
                 display: grid;
@@ -2024,7 +2004,7 @@ footer {
             }
 
             .avatar {
-                --radius: 9rem;
+                --radius: 10rem;
                 --d: calc(var(--i) / var(--total));
                 --r-offset: -0.15turn;
                 --r-amount: 1turn;
@@ -2093,28 +2073,32 @@ footer {
             }
 
             /* Altera o Titulo Cenas */
+            #cenas {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                height: auto;
+                top: 0.2rem;
+                left: 11.4rem;
+                font-weight: 900;
+                font-size: 50px;
+            }
+
             .csn-one {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                left: 8rem;
-                width: 40%;
+                left: -0.3rem;
+                width: 100%;
                 height: auto;
-                top: -11rem;
+                top: 4rem;
+                /* background-color: red; */
             }
 
-            #cenas {
-                display: flex;
-                position: relative;
-                width: 100%;
-                height: 100%;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                font-weight: 600;
-                font-size: 50px;
-            }
+
 
             .turma {
                 position: relative;
@@ -2139,7 +2123,7 @@ footer {
                 max-width: 210px;
                 overflow: hidden;
                 top: -9rem;
-                left: 9.9rem;
+                left: 10.8rem;
                 border: 2px solid #333;
                 border-radius: 10px;
                 background-color: red;
