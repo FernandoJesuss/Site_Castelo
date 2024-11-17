@@ -1946,7 +1946,7 @@ footer {
                 left: -7rem;
                 width: 40%;
                 height: auto;
-                top: 50rem;
+                top: -3rem;
 
             }
 
@@ -2016,21 +2016,25 @@ footer {
             }
     
             .profile-image {
-                width: 100%;
+                width: 70%;
                 height: auto;
                 border-radius: 50%;
-                margin-top: 12rem;
+                margin-top: 3rem;
                 margin-bottom: 8%;
     
             }
     
             .profile-info h1 {
+                position: relative;
+                top: -2rem;
                 font-size: 35px;
                 font-weight: 500;
     
             }
     
             .profile-info p {
+                position: relative;
+                top: -2rem;
                 margin: 20px;
                 margin-bottom: 50px;
                 color: #333333;
@@ -2041,10 +2045,12 @@ footer {
     
             .profile-info a {
                 text-decoration: none;
+                position: relative;
+                top: -4rem;
                 background-color: #FF4500;
                 color: #FFFFFF;
                 border: none;
-                border-radius: 5px;
+                border-radius: 20px;
                 cursor: pointer;
                 font-size: 1.2em;
                 transition: background-color 0.3s;
@@ -2059,7 +2065,7 @@ footer {
             .circle-wrapper {
                 margin-left: 2.5rem;
                 left: 0.3rem;
-                top: 54rem;
+                top: -1rem;
                 border: 1px solid #0f3e5d;
                 position: relative;
                 border-radius: 9999px;
@@ -2176,103 +2182,109 @@ footer {
 
             }
 
-            .csn-one {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                position: relative;
-                left: 7rem;
-                top: 61.9rem;
-                font-weight: 500;
-                font-size: 30px;
+            /* Altera o Titulo Cenas*/
+        .csn-one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            left: 8rem;
+            width: 40%;
+            height: auto;
+            top: -11rem;
+            /* margin-top: 50px; */
 
-            }
+        }
 
-            #cenas {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
+        #cenas {
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: 600;
+            font-size: 50px;
+        }
 
-            }
+        .turma {
+            position: relative;
+            top: 5.5rem;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+        }
 
-            .turma {
-                position: relative;
-                top: 62.8rem;
-                left: 0;
-                width: 100%;
-                height: auto;
-                z-index: -1;
-            }
+        /*Carrossel de Videos*/
+        .carrossel {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            height: 49vw;
+            max-width: 210px;
+            overflow: hidden;
+            top: -9rem;
+            left: 10.9rem;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: red;
+        }
 
-            /*Carrossel de Videos*/
-            .carrossel {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: 20px;
-                justify-content: center;
-                text-align: center;
-                position: relative;
-                width: 80%;
-                height: 49vw;
-                max-width: 210px;
-                overflow: hidden;
-                top: 49rem;
-                left: 10.9rem;
-                border: 2px solid #333;
-                border-radius: 10px;
-                background-color: red;
-            }
+        .videos {
+            display: flex;
+            transition: transform 0.5s ease;
 
-            .videos {
-                display: flex;
-                transition: transform 0.5s ease;
+        }
 
-            }
+        .video {
+            min-width: 100%;
 
-            .video {
-                min-width: 100%;
+        }
 
-            }
+        iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
 
-            iframe {
-                width: 100%;
-                height: 250px;
-                border: none;
+        }
 
-            }
-
-            #botao-carr,
-            #botao-ssel {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background-color: rgba(0, 0, 0, 0.5);
-                color: white;
-                border: none;
-                padding: 10px;
-                cursor: pointer;
-                border-radius: 5px;
-            }
+        #botao-carr,
+        #botao-ssel {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
 
-            .prev {
-                left: 10px;
-            }
+        .prev {
+            left: 10px;
+        }
 
-            .next {
-                right: 10px;
-            }
+        .next {
+            right: 10px;
+        }
 
-            footer {
-                position: relative;
-                margin-top: 50.5rem;
-                text-align: center;
-                padding: 20px;
-                background-color: #d21717;
-            }
+        footer {
+            position: relative;
+            margin-top: -6.8rem;
+            text-align: center;
+            padding: 20px;
+            background-color: #d21717;
+        }
+
 
         }
     }
