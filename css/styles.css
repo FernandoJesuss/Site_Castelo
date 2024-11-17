@@ -816,11 +816,11 @@ footer {
     }
 
     .carrossel {
-       
+
         gap: 20px;
         position: relative;
         width: 100%;
-      
+
         max-width: 400px;
         overflow: hidden;
         top: -1rem;
@@ -887,7 +887,7 @@ footer {
     }
 
     .logo {
-              display: flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -966,7 +966,7 @@ footer {
         top: -15rem;
         align-items: center;
         justify-content: center;
-        text-align: center;        
+        text-align: center;
 
     }
 
@@ -1024,7 +1024,7 @@ footer {
     .audio-btn:hover {
         background-color: #f1fcb9;
     }
-    
+
     /*Altera o Sobre*/
     .container {
         display: flex;
@@ -1238,7 +1238,7 @@ footer {
     }
 
 
-    
+
     #cenas {
         display: flex;
         justify-content: center;
@@ -1374,9 +1374,7 @@ footer {
             max-height: 100%;
             width: 50%;
             height: 50%;
-            left: 7.5rem;
             margin-top: 20px;
-
         }
 
         .hamburger {
@@ -1394,17 +1392,14 @@ footer {
             width: 100%;
             top: 15vh;
             left: 0;
-
         }
 
         nav.active {
             display: flex;
-
         }
 
         nav a {
             margin: 10px 0;
-
         }
 
         .hamburger.active .bar:nth-child(1) {
@@ -1414,7 +1409,6 @@ footer {
 
         .hamburger.active .bar:nth-child(2) {
             opacity: 0;
-
         }
 
         .hamburger.active .bar:nth-child(3) {
@@ -1435,7 +1429,7 @@ footer {
             height: 100vh;
             overflow: hidden;
         }
-    
+
         .video-background video {
             min-width: 100%;
             min-height: 100%;
@@ -1448,22 +1442,19 @@ footer {
             z-index: -1;
             object-fit: cover;
             filter: brightness(60%);
-    
         }
-    
-        
 
-        
         #personagens {
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            left: -6rem;
-            width: 40%;
+            width: 100%;
             height: auto;
-            top: -1rem;
-            margin-top: 50px;
+            left: -50%;
+            top: -15rem;
+            font-weight: 700;
+            font-size: 60px;
 
         }
 
@@ -1471,28 +1462,25 @@ footer {
             display: flex;
             position: relative;
             width: 100%;
-            height: 100%;
+            height: auto;
+            /* top: 15rem; */
             align-items: center;
             justify-content: center;
             text-align: center;
-            font-weight: 600;
-            font-size: 50px;
-
         }
 
         .content-overlay {
             position: relative;
             z-index: 1;
             padding: 20px;
-    
         }
-    
-        /*Alterar o Botão Audio*/
+
+        /* Alterar o Botão Audio */
         .audio-btn {
             position: relative;
             top: 8rem;
             right: -23.6rem;
-                        border: none;
+            border: none;
             color: #333;
             padding: 10px 15px;
             text-align: center;
@@ -1504,14 +1492,13 @@ footer {
             background-color: #007bff;
             opacity: 0.5;
             transition: opacity 0.3s ease, background-color 0.3s;
-    
         }
-    
+
         .audio-btn:hover {
             background-color: #f1fcb9;
-        }      
+        }
 
-        /*Altera o Sobre*/
+        /* Altera o Sobre */
         .container {
             display: flex;
             justify-content: center;
@@ -1530,22 +1517,18 @@ footer {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
         }
 
         .profile-image {
             width: 90%;
             height: auto;
             border-radius: 50%;
-            margin-right: -20px;
             margin-bottom: 8%;
-
         }
 
         .profile-info h1 {
             font-size: 35px;
             font-weight: 500;
-
         }
 
         .profile-info p {
@@ -1554,7 +1537,6 @@ footer {
             color: #333333;
             font-size: 15px;
             line-height: 1.5;
-
         }
 
         .profile-info a {
@@ -1566,65 +1548,57 @@ footer {
             cursor: pointer;
             font-size: 1.2em;
             transition: background-color 0.3s;
-
         }
 
         .profile-info a:hover {
             background-color: #FF6347;
-
         }
 
         .circle-wrapper {
-            left: 5.1rem;
-            top: 3rem;
+            left: 3.1rem;
+            top: -5rem;
             border: 1px solid #0f3e5d;
             position: relative;
             border-radius: 9999px;
             display: grid;
-            width: 310px;
-            height: 310px;
+            width: 380px;
+            height: 380px;
             grid-template-areas: "stack";
             place-content: center;
-
         }
 
         label {
             grid-area: stack;
-            width: 2rem;
-            height: 2rem;
+            width: 3rem;
+            height: 3rem;
             border-radius: 9999px;
             border: 1px solid #738088;
             display: grid;
             place-content: center;
-            background-color: rgba(255, 255, 255, 02);
+            background-color: rgba(255, 255, 255, 0.2);
             position: relative;
             color: #87ceeb;
             font-size: 1.25rem;
-            transition-property: all;
-            transition-duration: 0.5s;
+            transition: all 0.5s;
             cursor: pointer;
             box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
-
         }
 
-
         .relogio {
-            width: 2rem;
-            height: 2rem;
+            width: 3rem;
+            height: 3rem;
             border-radius: 50%;
             object-fit: cover;
             transition: all 1s ease-in-out;
-
         }
 
         .avatar {
-            --radius: 9rem;
+            --radius: 12rem;
             --d: calc(var(--i) / var(--total));
             --r-offset: -0.15turn;
             --r-amount: 1turn;
             --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
             transform: rotate(var(--r)) translate(var(--radius)) rotate(calc(-1 * var(--r)));
-
         }
 
         svg {
@@ -1632,12 +1606,10 @@ footer {
             position: absolute;
             inset: 0 0 0 -50%;
             margin: auto;
-            width: 7vh;
+            width: 8vh;
             opacity: 0;
             z-index: -10;
-
         }
-
 
         .center-element {
             position: absolute;
@@ -1658,7 +1630,6 @@ footer {
             letter-spacing: 0.05em;
             color: #cbd5e0;
             font-size: 1rem;
-
         }
 
         .center-element::before {
@@ -1672,18 +1643,15 @@ footer {
             border-radius: 50%;
             z-index: -10;
             transition: all 1s;
-
         }
 
         input:checked+label {
             transform: none !important;
             transition-duration: 1s;
-
         }
 
         input:checked+label>img {
             transform: scale(4);
-
         }
 
         input:checked+label>svg {
@@ -1691,30 +1659,37 @@ footer {
             transform: scale(3.90) rotate(-10deg);
             transition-delay: 700ms, 500ms, 2000ms;
             z-index: 10;
-
         }
 
+        /* Altera o Titulo Cenas */
 
-        /* Altera o Titulo Cenas*/
-        .csn-one {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            left: 7rem;
-            top: -7rem;
-            font-weight: 500;
-            font-size: 35px;
-
-        }
 
         #cenas {
             display: flex;
             justify-content: center;
+            top: -0.2rem;
             align-items: center;
             text-align: center;
+            /* margin-left: -22rem; */
+            width: auto;
+            height: auto;
+            /* margin-top: 12%; */
+            left: 11rem;
+            font-weight: 700;
+            font-size: 55px;
 
+        }
+
+        .csn-one {
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            /* top: 15rem; */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            left: 1rem;
         }
 
         .turma {
@@ -1726,7 +1701,7 @@ footer {
             z-index: -1;
         }
 
-        /*Carrossel de Videos*/
+        /* Carrossel de Videos */
         .carrossel {
             display: flex;
             flex-wrap: wrap;
@@ -1749,19 +1724,16 @@ footer {
         .videos {
             display: flex;
             transition: transform 0.5s ease;
-
         }
 
         .video {
             min-width: 100%;
-
         }
 
         iframe {
             width: 100%;
             height: 250px;
             border: none;
-
         }
 
         #botao-carr,
@@ -1776,7 +1748,6 @@ footer {
             cursor: pointer;
             border-radius: 5px;
         }
-
 
         .prev {
             left: 10px;
@@ -1793,6 +1764,8 @@ footer {
             padding: 20px;
             background-color: #d21717;
         }
+
+
 
         /* @media (max-width: 400px)  */
         @media (max-width: 400px) {
@@ -1879,7 +1852,7 @@ footer {
                 height: 100vh;
                 overflow: hidden;
             }
-        
+
             .video-background video {
                 min-width: 100%;
                 min-height: 100%;
@@ -1892,8 +1865,9 @@ footer {
                 z-index: -1;
                 object-fit: cover;
                 filter: brightness(60%);
-        
+
             }
+
             #personagens {
                 display: flex;
                 justify-content: center;
@@ -1923,15 +1897,15 @@ footer {
                 position: relative;
                 z-index: 1;
                 padding: 20px;
-        
+
             }
-        
+
             /*Alterar o Botão Audio*/
             .audio-btn {
                 position: relative;
                 top: 6rem;
                 right: -18.6rem;
-                            border: none;
+                border: none;
                 color: #333;
                 padding: 10px 15px;
                 text-align: center;
@@ -1943,12 +1917,13 @@ footer {
                 background-color: #007bff;
                 opacity: 0.5;
                 transition: opacity 0.3s ease, background-color 0.3s;
-        
+
             }
-        
+
             .audio-btn:hover {
                 background-color: #f1fcb9;
-            }      
+            }
+
             /*Altera o Sobre*/
             .container {
                 display: flex;
@@ -1968,26 +1943,26 @@ footer {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-    
+
             }
-    
+
             .profile-image {
                 width: 70%;
                 height: auto;
                 border-radius: 50%;
                 margin-top: 3rem;
                 margin-bottom: 8%;
-    
+
             }
-    
+
             .profile-info h1 {
                 position: relative;
                 top: -2rem;
                 font-size: 35px;
                 font-weight: 500;
-    
+
             }
-    
+
             .profile-info p {
                 position: relative;
                 top: -2rem;
@@ -1996,9 +1971,9 @@ footer {
                 color: #333333;
                 font-size: 14px;
                 line-height: 1.5;
-    
+
             }
-    
+
             .profile-info a {
                 text-decoration: none;
                 position: relative;
@@ -2010,12 +1985,12 @@ footer {
                 cursor: pointer;
                 font-size: 1em;
                 transition: background-color 0.3s;
-    
+
             }
-    
+
             .profile-info a:hover {
                 background-color: #FF6347;
-    
+
             }
 
             .circle-wrapper {
@@ -2139,107 +2114,107 @@ footer {
             }
 
             /* Altera o Titulo Cenas*/
-        .csn-one {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            left: 8rem;
-            width: 40%;
-            height: auto;
-            top: -11rem;
-            /* margin-top: 50px; */
+            .csn-one {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                left: 8rem;
+                width: 40%;
+                height: auto;
+                top: -11rem;
+                /* margin-top: 50px; */
 
-        }
+            }
 
-        #cenas {
-            display: flex;
-            position: relative;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-weight: 600;
-            font-size: 50px;
-        }
+            #cenas {
+                display: flex;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-weight: 600;
+                font-size: 50px;
+            }
 
-        .turma {
-            position: relative;
-            top: 5.5rem;
-            left: 0;
-            width: 100%;
-            height: auto;
-            z-index: -1;
-        }
+            .turma {
+                position: relative;
+                top: 5.5rem;
+                left: 0;
+                width: 100%;
+                height: auto;
+                z-index: -1;
+            }
 
-        /*Carrossel de Videos*/
-        .carrossel {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 20px;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            width: 100%;
-            height: 49vw;
-            max-width: 210px;
-            overflow: hidden;
-            top: -9rem;
-            left: 9.9rem;
-            border: 2px solid #333;
-            border-radius: 10px;
-            background-color: red;
-        }
+            /*Carrossel de Videos*/
+            .carrossel {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 20px;
+                justify-content: center;
+                text-align: center;
+                position: relative;
+                width: 100%;
+                height: 49vw;
+                max-width: 210px;
+                overflow: hidden;
+                top: -9rem;
+                left: 9.9rem;
+                border: 2px solid #333;
+                border-radius: 10px;
+                background-color: red;
+            }
 
-        .videos {
-            display: flex;
-            transition: transform 0.5s ease;
+            .videos {
+                display: flex;
+                transition: transform 0.5s ease;
 
-        }
+            }
 
-        .video {
-            min-width: 100%;
+            .video {
+                min-width: 100%;
 
-        }
+            }
 
-        iframe {
-            width: 100%;
-            height: 250px;
-            border: none;
+            iframe {
+                width: 100%;
+                height: 250px;
+                border: none;
 
-        }
+            }
 
-        #botao-carr,
-        #botao-ssel {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+            #botao-carr,
+            #botao-ssel {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
 
 
-        .prev {
-            left: 10px;
-        }
+            .prev {
+                left: 10px;
+            }
 
-        .next {
-            right: 10px;
-        }
+            .next {
+                right: 10px;
+            }
 
-        footer {
-            position: relative;
-            margin-top: -6.8rem;
-            text-align: center;
-            padding: 20px;
-            background-color: #d21717;
-        }
+            footer {
+                position: relative;
+                margin-top: -6.8rem;
+                text-align: center;
+                padding: 20px;
+                background-color: #d21717;
+            }
 
 
         }
