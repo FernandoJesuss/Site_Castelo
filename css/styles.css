@@ -1966,7 +1966,7 @@ footer {
 
             .circle-wrapper {
                 margin-left: 2.5rem;
-                left: -0.55rem;
+                left: -0.90rem;
                 top: -3.5rem;
                 border: 1px solid #0f3e5d;
                 position: relative;
@@ -1980,8 +1980,8 @@ footer {
 
             label {
                 grid-area: stack;
-                width: 2.5rem;
-                height: 2.5rem;
+                width: 2rem;
+                height: 2rem;
                 border-radius: 9999px;
                 border: 1px solid #738088;
                 display: grid;
@@ -2083,7 +2083,7 @@ footer {
                 top: 0.2rem;
                 left: 11.4rem;
                 font-weight: 900;
-                font-size: 50px;
+                font-size: 40px;
             }
 
             .csn-one {
@@ -2123,7 +2123,7 @@ footer {
                 max-width: 210px;
                 overflow: hidden;
                 top: -9rem;
-                left: 10.8rem;
+                left: 10rem;
                 border: 2px solid #333;
                 border-radius: 10px;
                 background-color: red;
