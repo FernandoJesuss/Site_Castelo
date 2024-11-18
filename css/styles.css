@@ -179,7 +179,6 @@ main {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     background-color: #FFA500;
 
-
 }
 
 .profile-image {
@@ -195,7 +194,6 @@ main {
     color: #FFFFFF;
     font-size: 2.5em;
     text-align: center;
-
 }
 
 .profile-info p {
@@ -550,7 +548,7 @@ footer {
 
     }
 
-    /* Estilos para quando o menu estiver aberto */
+
     .hamburger.active .bar:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
         z-index: 3;
@@ -565,10 +563,6 @@ footer {
         transform: rotate(-45deg) translate(5px, -5px);
         z-index: 3;
     }
-
-
-
-
 
     .container {
         display: flex;
@@ -783,10 +777,6 @@ footer {
         justify-content: center;
         top: 10rem;
         left: 11.5rem;
-
-
-
-
     }
 
     #cenas {
@@ -820,7 +810,6 @@ footer {
         gap: 20px;
         position: relative;
         width: 100%;
-
         max-width: 400px;
         overflow: hidden;
         top: -1rem;
@@ -871,9 +860,6 @@ footer {
 
 }
 
-
-
-/*@media 768px*/
 @media screen and (max-width: 768px) {
     header {
         display: flex;
@@ -929,7 +915,6 @@ footer {
 
     }
 
-    /* Estilos para quando o menu estiver aberto */
     .hamburger.active .bar:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
         z-index: 3;
@@ -944,7 +929,7 @@ footer {
         transform: rotate(-45deg) translate(5px, -5px);
         z-index: 3;
     }
-    
+
     .video-background {
         position: relative;
         width: 100%;
@@ -974,12 +959,10 @@ footer {
 
     }
 
-    /*Alterar o Botão Audio*/
     .audio-btn {
         position: relative;
         top: 7rem;
         right: -40rem;
-        /* background-color: rgba(255, 255, 255, 0.5); */
         border: none;
         color: #333;
         padding: 10px 15px;
@@ -999,13 +982,10 @@ footer {
         background-color: #f1fcb9;
     }
 
-    /*Altera o Sobre*/
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* height: 100vh; */
-
         position: relative;
     }
 
@@ -1020,8 +1000,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* margin-top: 38rem; */
-        /* z-index: 3; */
 
     }
 
@@ -1071,7 +1049,6 @@ footer {
         top: 6rem;
         align-items: center;
         text-align: center;
-        /* margin-left: -0rem; */
         width: auto;
         height: auto;
     }
@@ -1081,7 +1058,6 @@ footer {
         position: relative;
         width: 100%;
         height: 100%;
-        /* top: 15rem; */
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -1124,7 +1100,6 @@ footer {
 
     }
 
-    /* Imagem styles */
     .relogio {
         width: 3rem;
         height: 3rem;
@@ -1134,7 +1109,6 @@ footer {
 
     }
 
-    /* Avatar transform styles*/
     .avatar {
         --radius: 16rem;
         --d: calc(var(--i) / var(--total));
@@ -1211,8 +1185,6 @@ footer {
 
     }
 
-
-
     #cenas {
         display: flex;
         justify-content: center;
@@ -1225,26 +1197,16 @@ footer {
 
     }
 
-
     .csn-one {
         display: flex;
         position: relative;
         width: 100%;
         height: 100%;
-        /* top: 15rem; */
         align-items: center;
         justify-content: center;
         text-align: center;
         font-weight: 600;
         font-size: 50px;
-
-
-
-
-
-
-
-
     }
 
     .turma {
@@ -1256,7 +1218,6 @@ footer {
         z-index: -1;
     }
 
-    /*Carrossel de Videos*/
     .carrossel {
         display: flex;
         flex-wrap: wrap;
@@ -1319,14 +1280,11 @@ footer {
         height: auto;
         margin-top: 7rem;
         position: relative;
-        /* top: 10rem; */
         text-align: center;
-        /* padding: 20px; */
         z-index: 2;
 
     }
 
-    /* Estilos específicos para smartphones */
     @media (max-width: 480px) {
         header {
             display: flex;
@@ -1438,7 +1396,6 @@ footer {
             position: relative;
             width: 100%;
             height: auto;
-            /* top: 15rem; */
             align-items: center;
             justify-content: center;
             text-align: center;
@@ -1450,7 +1407,6 @@ footer {
             padding: 20px;
         }
 
-        /* Alterar o Botão Audio */
         .audio-btn {
             position: relative;
             top: 8rem;
@@ -1473,7 +1429,6 @@ footer {
             background-color: #f1fcb9;
         }
 
-        /* Altera o Sobre */
         .container {
             display: flex;
             justify-content: center;
@@ -1636,19 +1591,14 @@ footer {
             z-index: 10;
         }
 
-        /* Altera o Titulo Cenas */
-
-
         #cenas {
             display: flex;
             justify-content: center;
             top: -0.2rem;
             align-items: center;
             text-align: center;
-            /* margin-left: -22rem; */
             width: auto;
             height: auto;
-            /* margin-top: 12%; */
             left: 11rem;
             font-weight: 700;
             font-size: 55px;
@@ -1660,7 +1610,6 @@ footer {
             position: relative;
             width: 100%;
             height: 100%;
-            /* top: 15rem; */
             align-items: center;
             justify-content: center;
             text-align: center;
@@ -1676,7 +1625,6 @@ footer {
             z-index: -1;
         }
 
-        /* Carrossel de Videos */
         .carrossel {
             display: flex;
             flex-wrap: wrap;
@@ -1740,9 +1688,6 @@ footer {
             background-color: #d21717;
         }
 
-
-
-        /* @media (max-width: 400px)  */
         @media (max-width: 400px) {
             header {
                 display: flex;
@@ -1847,12 +1792,10 @@ footer {
                 max-height: 90px;
                 width: auto;
                 height: auto;
-
                 align-items: center;
                 justify-content: center;
                 text-align: center;
 
-                /* background-color: red; */
             }
 
             .content-overlay {
@@ -1861,7 +1804,6 @@ footer {
                 padding: 20px;
             }
 
-            /* Alterar o Botão Audio */
             .audio-btn {
                 position: relative;
                 top: 6rem;
@@ -1884,7 +1826,6 @@ footer {
                 background-color: #f1fcb9;
             }
 
-            /* Altera o Sobre */
             .container {
                 display: flex;
                 justify-content: center;
@@ -1909,7 +1850,6 @@ footer {
                 width: 100%;
                 height: auto;
                 border-radius: 50%;
-                /* margin-top: 3rem; */
                 margin-bottom: 8%;
             }
 
@@ -2048,8 +1988,7 @@ footer {
                 transition-delay: 700ms, 500ms, 2000ms;
                 z-index: 10;
             }
-
-            /* Altera o Titulo Cenas */
+           
             #cenas {
                 display: flex;
                 justify-content: center;
@@ -2074,10 +2013,8 @@ footer {
                 width: auto;
                 height: auto;
                 top: 4rem;
-                /* background-color: red; */
+               
             }
-
-
 
             .turma {
                 position: relative;
@@ -2087,8 +2024,7 @@ footer {
                 height: auto;
                 z-index: -1;
             }
-
-            /* Carrossel de Videos */
+            
             .carrossel {
                 display: flex;
                 flex-wrap: wrap;
