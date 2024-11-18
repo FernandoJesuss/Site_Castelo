@@ -8,7 +8,7 @@ O site apresenta informações sobre o Castelo, incluindo uma breve descrição 
 
 [**Acesse o Site**](https://fernandojesuss.github.io/Site_Castelo/)
 
-![Gerado de senhas](https://github.com/FernandoJesuss/Gerador_de_Senhas/blob/main/src/img/Cadeado.png)
+![Gerado de senhas](https://github.com/FernandoJesuss/Site_Castelo/blob/main/img/site%20Castelo.png)
 
 ## Personagens
 O site exibe uma galeria de personagens, com imagens e informações sobre cada um deles.
