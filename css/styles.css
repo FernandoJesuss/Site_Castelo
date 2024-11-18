@@ -1852,7 +1852,7 @@ footer {
                 justify-content: center;
                 text-align: center;
 
-                background-color: red;
+                /* background-color: red; */
             }
 
             .content-overlay {
@@ -1889,8 +1889,6 @@ footer {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                max-width: 100%;
-                max-height: 100%;
                 height: auto;
                 position: relative;
             }
@@ -1945,22 +1943,22 @@ footer {
 
             .circle-wrapper {
                 margin-left: 2.5rem;
-                left: -0.90rem;
+                left: 1rem;
                 top: -3.5rem;
                 border: 1px solid #0f3e5d;
                 position: relative;
                 border-radius: 9999px;
                 display: grid;
-                width: 330px;
-                height: 330px;
+                width: 280px;
+                height: 280px;
                 grid-template-areas: "stack";
                 place-content: center;
             }
 
             label {
                 grid-area: stack;
-                width: 2rem;
-                height: 2rem;
+                width: 1.5rem;
+                height: 1.5rem;
                 border-radius: 9999px;
                 border: 1px solid #738088;
                 display: grid;
@@ -1975,15 +1973,15 @@ footer {
             }
 
             .relogio {
-                width: 2rem;
-                height: 2rem;
+                width: 1.5rem;
+                height: 1.5rem;
                 border-radius: 50%;
                 object-fit: cover;
                 transition: all 1s ease-in-out;
             }
 
             .avatar {
-                --radius: 10rem;
+                --radius: 8.7rem;
                 --d: calc(var(--i) / var(--total));
                 --r-offset: -0.15turn;
                 --r-amount: 1turn;
@@ -2101,8 +2099,8 @@ footer {
                 position: relative;
                 width: 100%;
                 height: 100%;
-                max-width: 200px;
-                max-height: 200px;
+                max-width: 190px;
+                max-height: 190px;
                 overflow: hidden;
                 top: -9rem;
                 left: 10.6rem;
