@@ -1973,8 +1973,8 @@ footer {
             }
 
             .relogio {
-                width: 1.5rem;
-                height: 1.5rem;
+                width: 2rem;
+                height: 2rem;
                 border-radius: 50%;
                 object-fit: cover;
                 transition: all 1s ease-in-out;
@@ -1992,9 +1992,9 @@ footer {
             svg {
                 transition: all 0.5s ease-in-out;
                 position: absolute;
-                inset: 0 0 0 -50%;
+                inset: 0 0 0 -60%;
                 margin: auto;
-                width: 7vh;
+                width: 8vh;
                 opacity: 0;
                 z-index: -10;
             }
