@@ -6,13 +6,14 @@ let audioEnabled = false;
 audioToggleBtn.addEventListener('click', () => {
   if (audioEnabled) {
     videoElement.muted = true;
-    audioToggleBtn.innerHTML = '<i class="fas fa-volume-up">🔇</i>';
+    audioToggleBtn.innerHTML = '<i class="fas fa-volume-mute">🔇</i>';
   } else {
     videoElement.muted = false;
-    audioToggleBtn.innerHTML = '<i class="fas fa-volume-mute">🔊</i>';
+    audioToggleBtn.innerHTML = '<i class="fas fa-volume-up">🔊</i>';
   }
   audioEnabled = !audioEnabled;
 });
+
 
 //Menu Hambuger
 

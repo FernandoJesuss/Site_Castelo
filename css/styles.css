@@ -1348,6 +1348,7 @@ footer {
             max-height: 100%;
             width: 50%;
             height: 50%;
+            left: 30%;
             margin-top: 20px;
         }
 
@@ -1425,7 +1426,7 @@ footer {
             text-align: center;
             width: 100%;
             height: auto;
-            left: -2%;
+            left: -0.5%;
             top: -15rem;
             font-weight: 700;
             font-size: 60px;
@@ -1834,7 +1835,7 @@ footer {
                 width: 100%;
                 height: auto;
                 top: -12rem;
-                left: 1rem;
+                left: -0.5rem;
                 font-weight: 700;
                 font-size: 60px;
             }
@@ -2097,7 +2098,7 @@ footer {
                 max-width: 210px;
                 overflow: hidden;
                 top: -9rem;
-                left: 10.9rem;
+                left: 11rem;
                 border: 2px solid #333;
                 border-radius: 10px;
                 background-color: red;
