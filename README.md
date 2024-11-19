@@ -28,8 +28,6 @@ Cada seção possui uma página dedicada, com conteúdo relevante e imagens rela
 ## Tecnologias Utilizadas
 - **Frontend:** HTML, CSS, JavaScript
 
-## Como Usar
 
-1. **Acesse o aplicativo:** [**Acesse Site**](https://fernandojesuss.github.io/Site_Castelo/)
 
 
