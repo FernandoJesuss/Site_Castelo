@@ -1,6 +1,4 @@
-<h1 align="Site Castelo"</h1>
-
-
+<h1 align="center">Site Castelo Rá-Tim-Bum</h1>
 
 ## Usando o Site do Castelo
 O site do Castelo é uma plataforma online que oferece informações sobre o Castelo, seus personagens e eventos memoráveis.
