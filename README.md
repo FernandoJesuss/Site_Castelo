@@ -24,12 +24,9 @@ Cada seção possui uma página dedicada, com conteúdo relevante e imagens rela
 ## Funcionalidades
 
 - **Interface Amigável:** Design intuitivo que facilita a navegação.
-- **Geração Rápida de Senhas:** Crie senhas fortes com apenas um clique.
-- **Segurança:** As senhas geradas são aleatórias e robustas, garantindo a proteção das suas informações.
 
 ## Tecnologias Utilizadas
 - **Frontend:** HTML, CSS, JavaScript
-
 
 ## Como Usar
 
