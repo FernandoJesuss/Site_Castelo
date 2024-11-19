@@ -3,18 +3,18 @@
 
 # Documentação do site do Castelo
 
-## Sobre o Castelo
-O site apresenta informações sobre o Castelo, incluindo uma breve descrição e detalhes sobre sua história e localização.
+## Usando o Site do Castelo
+O site do Castelo é uma plataforma online que oferece informações sobre o Castelo, seus personagens e eventos memoráveis.
 
 [**Acesse o Site**](https://fernandojesuss.github.io/Site_Castelo/)
 
-![Gerado de senhas](https://github.com/FernandoJesuss/Site_Castelo/blob/main/img/site%20Castelo.png)
+![Gerado de senhas](https://github.com/FernandoJesuss/Site_Castelo/blob/main/img/Site_Castelo.png)
 
 ## Personagens
-O site exibe uma galeria de personagens, com imagens e informações sobre cada um deles.
+Essa seção exibe uma galeria de personagens associados ao Castelo, com suas respectivas imagens.
 
 ## Cenas Memoráveis
-Nesta seção, são apresentadas cenas marcantes relacionadas ao Castelo, com imagens e descrições.
+Nesta seção, são apresentadas alguns videos com cenas marcantes relacionadas ao Castelo.
 
 ## Estrutura do site
 O site é composto pelas seguintes seções:
@@ -24,7 +24,6 @@ O site é composto pelas seguintes seções:
 
 Cada seção possui uma página dedicada, com conteúdo relevante e imagens relacionadas.
 
-
 ## Funcionalidades
 
 - **Interface Amigável:** Design intuitivo que facilita a navegação.
@@ -32,14 +31,11 @@ Cada seção possui uma página dedicada, com conteúdo relevante e imagens rela
 - **Segurança:** As senhas geradas são aleatórias e robustas, garantindo a proteção das suas informações.
 
 ## Tecnologias Utilizadas
-
 - **Frontend:** HTML, CSS, JavaScript
-- **Frameworks:** (inserir frameworks utilizados, se houver)
-- **Bibliotecas:** (inserir bibliotecas utilizadas, se houver)
+
 
 ## Como Usar
 
 1. **Acesse o aplicativo:** [**Acesse Site**](https://fernandojesuss.github.io/Site_Castelo/)
-2. **Clique no botão "Gerar Senha":** Uma nova senha será gerada e exibida na caixa de texto.
-3. **Copie a senha gerada:** Utilize a senha gerada para suas contas online.
+
 
