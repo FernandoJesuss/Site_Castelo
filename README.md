@@ -26,7 +26,7 @@ Cada seção possui uma página dedicada, com conteúdo relevante e imagens rela
 - **Interface Amigável:** Design intuitivo que facilita a navegação.
 
 ## Tecnologias Utilizadas
-- **Frontend:** HTML, CSS, JavaScript
+HTML | CSS | JavaScript
 
 
 
